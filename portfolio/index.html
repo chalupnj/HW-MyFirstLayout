@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!--<meta property="og:title" content="" />-->
+    <!--<meta property="og:url" content="" />-->
+    <!--<meta property="og:image" content="" />-->
+    <!--<meta property="og:site_name" content="" />-->
+    <!--<meta property="og:description" content="" />-->
+    <title>Jennifer Chalupnik</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <!--[if lt IE 9]>
+            <script src="scripts/html5shiv.min.js"></script>
+        <![endif]-->
+</head>
+<body>
+    <div class="main-overlay js-main-overlay"></div>
+    <section class="cover-main" id="home">
+        <header>
+            <nav class="nav-wrapper">
+                <div class="menu-space">
+                    <!-- <a href="#">
+                        <img src="portfolio-images/white-logo.png" class="logo">
+                </div> -->
+                <!-- CHANGE THIS DUMB LOGO! But placeholder necessary or menu breaks in mobile -->
+                <ul class = "menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#work">My Work</a></li>
+                    <li><a href="#about">About Me</a></li>
+                </ul>
+            </div>
+            </nav>
+            <div class="menu-trigger js-menu-trigger"></div>
+        </header>
+        <div class="wrapper">
+            <ul id="scene"
+                data-invert-x="false"
+                data-invert-y="false"
+                data-scalar-x="8"
+                data-scalar-y="8"
+                data-friction-x="0.1"
+                data-friction-y="0.1"
+                data-origin-x="0.5"
+                data-origin-y="0.5">
+                <li class="layer name" data-depth="0.9">JENNIFER</li>
+                <li class="layer title" data-depth="0.5">CHALUPNIK</li>
+                <li class="layer btn btn-main"data-depth="0.3">
+                    <a href="#work" class="portfolio-btn">My Work</a>
+                    <!-- Change this depending on where the file is!! -->
+                    <a href="https://chalupnj.github.io" target="_blank" class="contact-btn">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="masonry-grid" id="work">
+        <h2 class="subtitle">A Few of My Recent Projects</h2>
+        <div class="grid">
+            <div class="grid-sizer"></div>
+            <div class="grid-item"><img src="images/doed-cover.png" alt="Department of Education Website Redesign" title="Department of Education Website Redesign"></div>
+            <div class="grid-item"><img src="images/alpacka-cover.jpg" alt="Alpacka" title="Alpacka"></div>
+            <div class="grid-item"><img src="images/duodoodle-cover.jpg" alt="Duo Doodle" title="Duo Doodle"></div>
+            <div class="grid-item"><img src="images/choreshare-cover.jpg" alt="Chore Share" title="Chore Share"></div>
+        </div>
+    </section>
+
+    <section class="beating-heart" id="about">
+        <table>
+            <td>
+                <div class="about-wrapper">
+                    <!-- <div class="headshot">
+                        <img src="images/headshot.jpg"></img>
+                    </div> -->
+                    <h2 class="subtitle">About Me</h2>
+                    <p>B.S. Product Design | Stanford University</p>
+                    <p>I have expertise in many facets of physical and digital product design; including design thinking, UX/UI design, user research, prototyping, wireframing, testing, and production. My SEO experience gives me a unique perspective when thinking about how to design for the user while also increasing organic traffic. My academic and professional background combines my skills in design thinking with my experience in user empathy and UX design. As a result, I have a strong foundation in user experience and product design across a variety of industries.</p>
+                    <span>I</span>
+                    <svg class="heart" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                        <path style="fill:#C03A2B;" d="M24.85,10.126c2.018-4.783,6.628-8.125,11.99-8.125c7.223,0,12.425,6.179,13.079,13.543
+                        c0,0,0.353,1.828-0.424,5.119c-1.058,4.482-3.545,8.464-6.898,11.503L24.85,48L7.402,32.165c-3.353-3.038-5.84-7.021-6.898-11.503
+                        c-0.777-3.291-0.424-5.119-0.424-5.119C0.734,8.179,5.936,2,13.159,2C18.522,2,22.832,5.343,24.85,10.126z"/>
+                        <path style="fill:#ED7161;" d="M6,18.078c-0.553,0-1-0.447-1-1c0-5.514,4.486-10,10-10c0.553,0,1,0.447,1,1s-0.447,1-1,1
+                        c-4.411,0-8,3.589-8,8C7,17.631,6.553,18.078,6,18.078z"/>
+                    </svg>
+                    <span>DESIGN</span>
+                </div>
+            </td>
+        </table>
+    </section>
+
+    <footer id="footer">
+        <nav class="contact-menu">
+            <ul>
+                <li>Made by Jennifer Chalupnik, 2019</li>
+            </ul>
+        </nav> 
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="scripts/parallax.min.js"></script>
+    <script src="scripts/masonry.js"></script>
+    <script src="scripts/main.js"></script>
+
+    <script>
+        var scene = document.getElementById("scene");
+        var parallax = new Parallax(scene);
+    </script>
+</body>
+
+</html>

@@ -1,11 +1,5 @@
 /*RESET CSS BEGIN*/
 
-
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
 html,
 body,
 div,
@@ -181,7 +175,8 @@ p,
 ul li,
 ol li {
     font-size: 16px;
-    line-height: 23px;
+    line-height: 16px;
+    /* change line height when removing ul */
     margin: 0 0 20px 0;
 }
 
@@ -284,8 +279,8 @@ header .menu-space {
 
 /*Parallax*/
 .cover-main {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url('../images/jevin18.jpg') right top;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/jevin18.jpg') right top;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url('../images/wireframe-cover.jpg') right top;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/wireframe-cover.jpg') right top;
   background-repeat: no-repeat;
   background-size: cover;
   height: 80vh;
@@ -359,7 +354,6 @@ ul#scene {
     padding-bottom: 15px;
 }
 
-
 h2.subtitle {
     position: relative;
     display: block;
@@ -380,10 +374,10 @@ h2.subtitle::after {
 
 /*Heart Animation*/
 section.beating-heart {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../images/about-cover.jpg") no-repeat left top / cover;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/about-cover.jpg") no-repeat left top / cover;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../images/about-cover.jpg") no-repeat left top / cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/about-cover.jpg") no-repeat left top / cover;
     text-align: center;
-    height: 120vh;
+    height: 75vh;
     padding: 0 10px 20px 10px;
     color: #ffffff;
     display: -webkit-box;
@@ -400,14 +394,17 @@ section.beating-heart {
       align-self: center;
 }
 
-/*table {
-    table-layout: fixed;
-    width: 100%;
-} and make all centers above rights*/
+section.beating-heart a {
+    color: #66EDED;
+}
+
+section.beating-heart a:hover {
+    color: #FFFFFF;
+}
 
 section.beating-heart span {
-    font-size: 100px;
-    line-height: 105px
+    font-size: 72px;
+    line-height: 77px
 }
 
 section.beating-heart h2 {
@@ -421,7 +418,7 @@ section.beating-heart h2::after {
 
 .heart {
     position: relative;
-    width: 150px;
+    width: 100px;
     margin: 0 50px;
     -webkit-animation: pulse 1s infinite;
             animation: pulse 1s infinite;
@@ -479,116 +476,6 @@ section.beating-heart h2::after {
           -webkit-transform: scale(1);
                   transform: scale(1);
       }
-}
-
-
-/*Slider*/
-
-#slider-subtitle {
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-.slider-for {
-    width: 500px;
-    height: 300px;
-    margin: 0px auto 30px;
-    overflow: hidden;
-}
-
-.slide-caption {
-    background: rgba(0, 0, 0, 0.5);
-    text-align: center;
-    margin: -55px auto;
-    color: #ffffff;
-    font-family: "Montserrat" "sans-serif";
-    min-height: 80px;
-    position: absolute;
-    width: calc(100% - 30px);
-    z-index: 2;
-}
-
-.slider-div {
-    margin: 10px auto;
-    text-align: center;
-    color: #ffffff;
-    width: 100%;
-}
-
-.slide {
-    max-height: 300px;
-    padding: 0 15px;
-}
-
-/*.slider-div h2 {
-  margin-bottom: 0;
-}
-
-.slider {
-  margin: 20px auto;
-  text-align: center;
-  padding: 20px;
-  color: white;
-}
-
-.slide {
-  max-height: 300px;
-  padding: 15px;
-}
-
-.slick-prev,
-.slick-next {
-  background: black;
-  width: 40px;
-  height: 40px;
-  z-index: 1;
-}
-
-.slick-prev {
-  left: 0;
-}
-
-.slick-next {
-  right: 0;
-}
-
-.slick-prev:hover,
-.slick-next:hover {
-  background: black;
-}*/
-
-/*.slick-center {
-    -webkit-transform: scale(1.25);
-    -moz-transform: scale(1.25);
-    transform: scale(1.25);
-    padding: 0 30px;
-}*/
-
-.slick-prev,.slick-next {
-    background: #ffffff;
-    width: 40px;
-    height: 40px;
-    z-index: 1;
-}
-
-.slick-prev {
-    left: 0;
-}
-
-.slick-next {
-    right: 0;
-}
-
-.slick-prev:hover,.slick-next:hover {
-    background: gray;
-}
-
-.slick-prev:before {
-  content: url("../portfolio-images/left-arrow.png");
-}
-
-.slick-next:before {
-  content: url("../portfolio-images/right-arrow.png");
 }
 
 
@@ -656,7 +543,6 @@ nav.contact-menu ul li a:hover {
         display: block;
         bottom: 15px;
         text-align: center;
-
     }
 
     nav.contact-menu ul li {
@@ -698,7 +584,7 @@ nav.contact-menu ul li a:hover {
     }
 
     .main-overlay:after {
-        background: url("../portfolio-images/close-icon.svg") no-repeat center / cover;
+        background: url("../images/close-icon.svg") no-repeat center / cover;
         width: 35px;
         height: 35px;
         display: block;
@@ -767,14 +653,13 @@ nav.contact-menu ul li a:hover {
     }
 
     h2.subtitle {
-        font-size: 25px;
+        font-size: 22px;
         line-height: 0px;
-        margin: 10px auto;
-        line-height: 0px;
+        margin: 25px auto;
     }
 
     section.beating-heart {
-        height: 140vh;
+        height: 75vh;
     }
 }
 
@@ -811,8 +696,8 @@ nav.contact-menu ul li a:hover {
 
     h2.subtitle {
         margin: 30px auto;
-        font-size: 23px;
-        line-height: 28px;
+        font-size: 18px;
+        line-height: 23px;
     }
 
     .beating-heart {
@@ -836,14 +721,14 @@ nav.contact-menu ul li a:hover {
     }
 
     section.beating-heart {
-        height: 170vh;
+        height: 75vh;
     }
 }
 
 @media only screen and (max-width: 360px) {
 
     section.beating-heart {
-        height: 185vh;
+        height: 75vh;
     }
 
 /*    .menu-trigger {

@@ -109,6 +109,7 @@ section {
 body {
     line-height: 1;
     font-family: "Montserrat", sans-serif;
+    font-size: 16px;
 }
 
 ol,
@@ -202,7 +203,7 @@ ol li {
 
 h1 {
     font-family: "Oswald", sans-serif;
-    font-size: 35px;
+    font-size: 36px;
     color: 00ff00;
 }
 
@@ -254,8 +255,7 @@ nav.nav-wrapper ul li {
 }
 
 nav.nav-wrapper ul li a {
-    font-size: 18px;
-    line-height: 23px;
+    font-size: 1.125rem;
     text-decoration: none;
     color: #ffffff;
     cursor: pointer;
@@ -288,8 +288,8 @@ header .menu-space {
 
 ul#scene li.name {
     text-align: center;
-    font-size: 40px;
-    line-height: 45px;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
     text-transform: uppercase;
     color: #ffffff;
     width: 100%;
@@ -297,8 +297,8 @@ ul#scene li.name {
 
 ul#scene li.title {
     text-align: center;
-    font-size: 40px;
-    line-height: 45px;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
     color: #ffffff;
     width: 100%;
     margin-top: 60px;
@@ -338,31 +338,83 @@ ul#scene {
     margin-left: 30px;
 }
 
-/*Masonry Gallery*/
-.masonry-grid {
+/*Photo Grid*/
+.photo-grid {
     position: relative;
 }
 
 .grid {
-    margin: 0 auto;
+    align-items: stretch;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
 }
 
-.grid-sizer,
 .grid-item {
-    width: 24%;
-    padding-left: 15px;
-    padding-bottom: 15px;
+    margin: 15px;
+    position: relative;
+    width: calc(50% - 30px);
 }
+
+/* Darken image with overlay. Reminder: before means take the div and insert this code before anything else within that div. */
+.grid-item .overlay {
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+  }
+
+.grid-item:hover .overlay {
+    opacity: 1;
+}
+
+.grid-caption {
+    color: #FFFFFF;
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 80%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  .grid-title {
+      font-size: 2rem;
+      padding-bottom: 5px;
+  }
+  
+  /* Animate caption to fade in from bottom on hover. */
+  .grid-item:hover .grid-caption {
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+  }
 
 h2.subtitle {
     position: relative;
     display: block;
     margin: 50px auto;
     text-align: center;
-    font-size: 35px;
-    line-height: 40px;
+    font-size: 2.1rem;
 }
 
+/* underline */
 h2.subtitle::after {
     display: block;
     height: 2px;
@@ -372,18 +424,18 @@ h2.subtitle::after {
     margin: 30px auto 0 auto;
 }
 
-/*Heart Animation*/
-section.beating-heart {
+
+/*About Me*/
+section.about-me {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../images/about-cover.jpg") no-repeat left top / cover;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/about-cover.jpg") no-repeat left top / cover;
-    text-align: center;
-    height: 75vh;
-    padding: 0 10px 20px 10px;
     color: #ffffff;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    display: flex;
+    height: 75vh;
+    padding: 0 10px 20px 10px;
+    text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -394,93 +446,26 @@ section.beating-heart {
       align-self: center;
 }
 
-section.beating-heart a {
+section.about-me a {
     color: #66EDED;
 }
 
-section.beating-heart a:hover {
+section.about-me a:hover {
     color: #FFFFFF;
 }
 
-section.beating-heart span {
-    font-size: 72px;
-    line-height: 77px
-}
-
-section.beating-heart h2 {
+section.about-me h2 {
     margin-bottom: 30px;
     margin-top: 40px;
 }
 
-section.beating-heart h2::after {
+/* underline */
+section.about-me h2::after {
     background: #ffffff;
-}
-
-.heart {
-    position: relative;
-    width: 100px;
-    margin: 0 50px;
-    -webkit-animation: pulse 1s infinite;
-            animation: pulse 1s infinite;
-}
-
-@-webkit-keyframes pulse {
-      0% {
-          -webkit-transform: scale(1);
-                  transform: scale(1);
-      }
-
-      15% {
-          -webkit-transform: scale(1.25);
-                  transform: scale(1.25);
-      }
-
-      25% {
-        -webkit-transform: scale(1.15);
-                transform: scale(1.15);
-      }
-
-      35% {
-          -webkit-transform: scale(1.25);
-                  transform: scale(1.25);
-      }
-
-      100% {
-          -webkit-transform: scale(1);
-                  transform: scale(1);
-      }
-}
-
-@keyframes pulse {
-      0% {
-          -webkit-transform: scale(1);
-                  transform: scale(1);
-      }
-
-      15% {
-          -webkit-transform: scale(1.25);
-                  transform: scale(1.25);
-      }
-
-      25% {
-        -webkit-transform: scale(1.15);
-                transform: scale(1.15);
-      }
-
-      35% {
-          -webkit-transform: scale(1.25);
-                  transform: scale(1.25);
-      }
-
-      100% {
-          -webkit-transform: scale(1);
-                  transform: scale(1);
-      }
 }
 
 
 /*Footer*/
-
 footer {
     position: relative;
     width: 100%;
@@ -508,8 +493,7 @@ nav.contact-menu ul li {
     margin-bottom: 0;
     margin-left: 15px;
     color: #ffffff;
-    font-size: 18px;
-    line-height: 23px;
+    font-size: 1.125rem;
 }
 
 nav.contact-menu ul li a {
@@ -525,11 +509,6 @@ nav.contact-menu ul li a:hover {
 /*Responsive Menu*/
 
 @media only screen and (max-width: 1160px) {
-    section.beating-heart span {
-        font-size: 30px;
-        line-height: 35px;
-    }
-
     .heart {
         width: 50px;
         margin: 0 20px;
@@ -546,8 +525,7 @@ nav.contact-menu ul li a:hover {
     }
 
     nav.contact-menu ul li {
-        font-size: 15px;
-        line-height: 20px;
+        font-size: 1rem;
     }
 }
     .wrapper {
@@ -618,8 +596,7 @@ nav.contact-menu ul li a:hover {
     }
 
     nav.nav-wrapper ul li a {
-        font-size: 18px;
-        line-height: 23px;
+        font-size: 1.125rem;
     }
 
     nav.nav-wrapper ul li a:hover {
@@ -642,23 +619,16 @@ nav.contact-menu ul li a:hover {
     }
 
     #about p {
-        font-size: 14px;
-    }
-
-    section.beating-heart span {
-        font-size: 20px;
-        line-height: 25px;
-        margin-top: 10px;
-        margin-bottom: 30px;
+        font-size: 0.88rem;
     }
 
     h2.subtitle {
-        font-size: 22px;
+        font-size: 1.4rem;
         line-height: 0px;
         margin: 25px auto;
     }
 
-    section.beating-heart {
+    section.about-me {
         height: 75vh;
     }
 }
@@ -667,13 +637,12 @@ nav.contact-menu ul li a:hover {
 @media only screen and (max-width: 560px) {
 
     ul#scene li.name {
-        font-size: 22px;
-        line-height: 27px;
+        font-size: 2rem;
     }
 
     ul#scene li.title {
-        font-size: 22px;
-        line-height: 27px;
+        font-size: 2rem;
+        line-height: 2.2rem;
         margin-top: 40px;
     }
 
@@ -682,34 +651,28 @@ nav.contact-menu ul li a:hover {
     }
 
     ul#scene {
-        margin-top: 50px;
+        margin-top: 2rem;
     }
 
     .portfolio-btn, .contact-btn {
         display: block;
         margin: 20px auto;
         max-width: 120px;
-        font-size: 15px;
-        line-height: 20px;
+        font-size: 1rem;
         padding: 10px 0;
     }
 
     h2.subtitle {
-        margin: 30px auto;
-        font-size: 18px;
-        line-height: 23px;
+        margin: 2rem auto 1rem auto;
+        font-size: 1.125rem;
     }
 
-    .beating-heart {
+    .about-me {
         height: initial;
     }
 
     .grid-item {
         width: initial;
-    }
-
-    .tall-img {
-        height: initial;
     }
 
     .menu {
@@ -720,14 +683,14 @@ nav.contact-menu ul li a:hover {
         width: initial !important;
     }
 
-    section.beating-heart {
-        height: 75vh;
+    section.about-me {
+        height: 80vh;
     }
 }
 
 @media only screen and (max-width: 360px) {
 
-    section.beating-heart {
+    section.about-me {
         height: 75vh;
     }
 

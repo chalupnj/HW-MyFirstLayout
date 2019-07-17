@@ -81,11 +81,11 @@ time,
 mark,
 audio,
 video {
-    margin: 0;
-    padding: 0;
     border: 0;
     font-size: 100%;
     font: inherit;
+    margin: 0;
+    padding: 0;
     vertical-align: baseline;
 }
 
@@ -107,9 +107,9 @@ section {
 }
 
 body {
-    line-height: 1;
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
+    line-height: 1;
 }
 
 ol,
@@ -190,56 +190,56 @@ ol li {
 /*HELPER CLASS END*/
 
 * {
+    outline: 0;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    outline: 0;
 }
 
 .wrapper {
+    margin: 0 auto;
     max-width: 1100px;
     width: 100%;
-    margin: 0 auto;
 }
 
 h1 {
+    color: 00ff00;
     font-family: "Oswald", sans-serif;
     font-size: 36px;
-    color: 00ff00;
 }
 
 
 /*Navigation Bar*/
 header {
     background: transparent;
-    width: 100%;
     position: relative;
+    width: 100%;
 }
 
 header.sticky {
-    position:fixed;
-    top: 0;
     left: 0;
+    position:fixed;
     right: 0;
+    top: 0;
     -webkit-transform: translateY(-200%);
-        transform: translateY(-200%);
+            transform: translateY(-200%);
     -webkit-transition: 0.2s;
-        transition: 0.2s;
+            transition: 0.2s;
     z-index: 5;
 }
 
 body.scroll header.sticky {
     -webkit-transform: translateY(0);
-          transform: translateY(0);
+        transform: translateY(0);
 }
 
 .nav-wrapper {
     background: #000000;
-    margin: auto;
-    position: relative;
-    padding: 8px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin: auto;
+    position: relative;
+    padding: 8px 0;
     -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-around;
@@ -250,17 +250,17 @@ body.scroll header.sticky {
 
 nav.nav-wrapper ul li {
     display: inline-block;
-    padding: 0 50px;
     margin-bottom: 0;
+    padding: 0 50px;
 }
 
 nav.nav-wrapper ul li a {
-    font-size: 1.125rem;
-    text-decoration: none;
+    border-bottom: 1px solid transparent;
     color: #ffffff;
     cursor: pointer;
-    border-bottom: 1px solid transparent;
+    font-size: 1.125rem;
     padding-bottom: 3px;
+    text-decoration: none;
     transition: 0.3s;
 }
 
@@ -277,31 +277,31 @@ header .menu-space {
 }
 
 
-/*Parallax*/
+/* Cover image */
 .cover-main {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url('../images/wireframe-cover.jpg') right top;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/wireframe-cover.jpg') right top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 80vh;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url('../images/wireframe-cover.jpg') right top;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/wireframe-cover.jpg') right top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
 }
 
 ul#scene li.name {
-    text-align: center;
+    color: #ffffff;
     font-size: 2.5rem;
     line-height: 2.5rem;
+    text-align: center;
     text-transform: uppercase;
-    color: #ffffff;
     width: 100%;
 }
 
 ul#scene li.title {
-    text-align: center;
+    color: #ffffff;
     font-size: 2.5rem;
     line-height: 2.5rem;
-    color: #ffffff;
-    width: 100%;
     margin-top: 60px;
+    text-align: center;
+    width: 100%;
 }
 
 ul#scene {
@@ -314,15 +314,15 @@ ul#scene {
     width: 100%;
 }
 .portfolio-btn, .contact-btn {
-    margin: 0 auto;
-    display: inline-block;
-    padding: 10px 20px;
-    border: 1px solid #ffffff;
     background: transparent;
+    border: 1px solid #ffffff;
     color: #ffffff;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 10px 20px;
     text-decoration: none;
     -webkit-transition: 0.3s;
-    transition: 0.3s;
+        transition: 0.3s;
 }
 
 .portfolio-btn:hover, .contact-btn:hover {
@@ -359,17 +359,17 @@ ul#scene {
 /* Darken image with overlay. Reminder: before means take the div and insert this code before anything else within that div. */
 .grid-item .overlay {
     background: rgba(0,0,0,0.7);
-    position: absolute;
-    height: 99%;
-    width: 100%;
-    left: 0;
-    top: 0;
     bottom: 0;
-    right: 0;
+    height: 99%;
+    left: 0;
     opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
     -webkit-transition: all 0.4s ease-in-out 0s;
-    -moz-transition: all 0.4s ease-in-out 0s;
-    transition: all 0.4s ease-in-out 0s;
+        -moz-transition: all 0.4s ease-in-out 0s;
+            transition: all 0.4s ease-in-out 0s;
   }
 
 .grid-item:hover .overlay {
@@ -378,14 +378,14 @@ ul#scene {
 
 .grid-caption {
     color: #FFFFFF;
-    position: absolute;
-    text-align: center;
-    padding-left: 1em;
-    padding-right: 1em;
-    width: 100%;
-    top: 80%;
     left: 50%;
     opacity: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    position: absolute;
+    text-align: center;
+    top: 80%;
+    width: 100%;
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -401,27 +401,27 @@ ul#scene {
   
   /* Animate caption to fade in from bottom on hover. */
   .grid-item:hover .grid-caption {
-    top: 50%;
     left: 50%;
     opacity: 1;
+    top: 50%;
   }
 
 h2.subtitle {
-    position: relative;
     display: block;
-    margin: 50px auto;
-    text-align: center;
     font-size: 2.1rem;
+    margin: 50px auto;
+    position: relative;
+    text-align: center;
 }
 
 /* underline */
 h2.subtitle::after {
-    display: block;
-    height: 2px;
     background-color: #000000;
     content: "";
-    width: 100px;
+    display: block;
+    height: 2px;
     margin: 30px auto 0 auto;
+    width: 100px;
 }
 
 
@@ -433,17 +433,17 @@ section.about-me {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 75vh;
+    height: 90vh;
     padding: 0 10px 20px 10px;
     text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-item-align: center;
-      align-self: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-item-align: center;
+        align-self: center;
 }
 
 section.about-me a {
@@ -456,7 +456,17 @@ section.about-me a:hover {
 
 section.about-me h2 {
     margin-bottom: 30px;
-    margin-top: 40px;
+    margin-top: 30px;
+}
+
+/* li edits start (remove after deleting li) */
+#about p,li {
+    margin-bottom: 0.2rem;
+}
+
+.headshot {
+    margin: 0 auto;
+    width: 10%;
 }
 
 /* underline */
@@ -467,39 +477,39 @@ section.about-me h2::after {
 
 /*Footer*/
 footer {
+    background-color: #000000;
+    height: 150px;
     position: relative;
     width: 100%;
-    height: 150px;
     z-index: -2;
-    background-color: #000000;
 }
 
 nav.contact-menu ul {
+    align-items: center;
     bottom: 50px;
+    display: flex;
+    justify-content: space-between;
     left: 50%;
     -webkit-transform: translate(-50%);
             transform: translate(-50%);
-    z-index: 1;
     margin: auto;
-    position: fixed;
     padding: 7px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position: fixed;
+    z-index: 1;
 }
 
 nav.contact-menu ul li {
+    color: #ffffff;
     display: inline-block;
+    font-size: 1.125rem;
     margin-bottom: 0;
     margin-left: 15px;
-    color: #ffffff;
-    font-size: 1.125rem;
 }
 
 nav.contact-menu ul li a {
-    text-decoration: none;
-    cursor: pointer;
     color: #ffffff;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 nav.contact-menu ul li a:hover {
@@ -509,18 +519,13 @@ nav.contact-menu ul li a:hover {
 /*Responsive Menu*/
 
 @media only screen and (max-width: 1160px) {
-    .heart {
-        width: 50px;
-        margin: 0 20px;
-    }
-
     footer {
         height: 100px;
     }
 
     nav.contact-menu ul {
-        display: block;
         bottom: 15px;
+        display: block;
         text-align: center;
     }
 
@@ -529,21 +534,21 @@ nav.contact-menu ul li a:hover {
     }
 }
     .wrapper {
+        margin: 0 auto;
         max-width: 1100px;
         width: 100%;
-        margin: 0 auto;
     }
 
 @media only screen and (max-width: 750px) {
     .menu-trigger {
         background: url("../images/hamburger-icon.svg") no-repeat center / cover;
-        width: 35px;
-        height: 35px;
         display: block;
-        z-index: 10;
+        height: 35px;
         position: absolute;
         right: 20px;
         top: 15px;
+        width: 35px;
+        z-index: 10;
     }
 
     .cover-main {
@@ -551,41 +556,41 @@ nav.contact-menu ul li a:hover {
     }
 
     .main-overlay {
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 0;
         background: rgba(0, 0, 0, 0.7);
-        z-index: 6;
+        bottom: 0;
         display: none;
+        left: 0;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 6;
     }
 
     .main-overlay:after {
         background: url("../images/close-icon.svg") no-repeat center / cover;
-        width: 35px;
-        height: 35px;
-        display: block;
         content: "";
+        display: block;
+        height: 35px;
         position: fixed;
-        top: 10px;
         right: 20px;
+        top: 10px;
+        width: 35px;
         z-index: 20;
     }
 
     .menu {
-        position: fixed;
-        top: 0;
+        background: #222222;
         bottom: 0;
         left: 0;
-        background: #222222;
-        width: 100%;
         max-width: 300px;
-        z-index: 30;
+        position: fixed;
+        top: 0;
+        width: 100%;
         -webkit-transform: translate3d(-100%, 0, 0);
                 transform: translate3d(-100%, 0, 0);
         -webkit-transition: 0.3s;
                 transition: 0.3s;
+                z-index: 30;
     }
 
     nav.nav-wrapper ul li {
@@ -618,7 +623,7 @@ nav.contact-menu ul li a:hover {
         display: none;
     }
 
-    #about p {
+    #about p, li {
         font-size: 0.88rem;
     }
 
@@ -628,14 +633,13 @@ nav.contact-menu ul li a:hover {
         margin: 25px auto;
     }
 
-    section.about-me {
-        height: 75vh;
-    }
+    /* section.about-me {
+        height: 95vh;
+    } */
 }
 
 
 @media only screen and (max-width: 560px) {
-
     ul#scene li.name {
         font-size: 2rem;
     }
@@ -656,15 +660,15 @@ nav.contact-menu ul li a:hover {
 
     .portfolio-btn, .contact-btn {
         display: block;
+        font-size: 1rem;
         margin: 20px auto;
         max-width: 120px;
-        font-size: 1rem;
         padding: 10px 0;
     }
 
     h2.subtitle {
-        margin: 2rem auto 1rem auto;
         font-size: 1.125rem;
+        margin: 2rem auto 1rem auto;
     }
 
     .about-me {
@@ -683,24 +687,31 @@ nav.contact-menu ul li a:hover {
         width: initial !important;
     }
 
-    section.about-me {
-        height: 80vh;
+    .cover-main {
+        height: 50vh;
     }
 }
 
 @media only screen and (max-width: 360px) {
-
-    section.about-me {
-        height: 75vh;
+    .about-me {
+        height: 70vh;
+    }
+    
+    .cover-main {
+        height: 53vh;
     }
 
-/*    .menu-trigger {
-        width: 35px;
-        height: 35px;
+   .menu-trigger {
         display: block;
-        z-index: 10;
+        height: 35px;
         position: absolute;
         right: 30px;
         top: 15px;
-    }*/
+        width: 35px;
+        z-index: 10;
+    }
+
+    section.about-me {
+        height: 77vh;
+    }
 }

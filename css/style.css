@@ -1,0 +1,717 @@
+/*RESET CSS BEGIN*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+/*RESET CSS END*/
+
+
+/*HELPER CLASS BEGIN*/
+img {
+    max-width: 100%;
+}
+
+.alignLeft {
+    float: left;
+}
+
+.alignRight {
+    float: right;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0;
+}
+
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}
+
+strong,
+b {
+    font-weight: 700;
+}
+
+em,
+i {
+    font-style: italic;
+}
+
+p,
+ul li,
+ol li {
+    font-size: 16px;
+    line-height: 16px;
+    /* change line height when removing ul */
+    margin: 0 0 20px 0;
+}
+
+ul li,
+ol li {
+    margin-bottom: 10px;
+}
+
+
+/*HELPER CLASS END*/
+
+* {
+    outline: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1100px;
+    width: 100%;
+}
+
+h1 {
+    color: 00ff00;
+    font-family: "Oswald", sans-serif;
+    font-size: 36px;
+}
+
+
+/*Navigation Bar*/
+header {
+    background: transparent;
+    position: relative;
+    width: 100%;
+}
+
+header.sticky {
+    left: 0;
+    position:fixed;
+    right: 0;
+    top: 0;
+    -webkit-transform: translateY(-200%);
+            transform: translateY(-200%);
+    -webkit-transition: 0.2s;
+            transition: 0.2s;
+    z-index: 5;
+}
+
+body.scroll header.sticky {
+    -webkit-transform: translateY(0);
+        transform: translateY(0);
+}
+
+.nav-wrapper {
+    background: #000000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    position: relative;
+    padding: 8px 0;
+    -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-around;
+    -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav.nav-wrapper ul li {
+    display: inline-block;
+    margin-bottom: 0;
+    padding: 0 50px;
+}
+
+nav.nav-wrapper ul li a {
+    border-bottom: 1px solid transparent;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.125rem;
+    padding-bottom: 3px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav.nav-wrapper ul li a:hover {
+    border-bottom: 1px solid #ffffff;
+}
+
+/*header .logo img {
+    max-width: 100px;
+}*/
+
+header .menu-space {
+    height: 50px;
+}
+
+
+/* Cover image */
+.cover-main {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url('../images/wireframe-cover.jpg') right top;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/wireframe-cover.jpg') right top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+}
+
+ul#scene li.name {
+    color: #ffffff;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+ul#scene li.title {
+    color: #ffffff;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    margin-top: 60px;
+    text-align: center;
+    width: 100%;
+}
+
+ul#scene {
+    margin-top: 10vh;
+}
+
+.btn {
+    margin-top: 150px;
+    text-align: center;
+    width: 100%;
+}
+.portfolio-btn, .contact-btn {
+    background: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    text-decoration: none;
+    -webkit-transition: 0.3s;
+        transition: 0.3s;
+}
+
+.portfolio-btn:hover, .contact-btn:hover {
+    background: #ffffff;
+    color: #000000;
+}
+
+.portfolio-btn {
+    margin-right: 30px;
+}
+
+.contact-btn {
+    margin-left: 30px;
+}
+
+/*Photo Grid*/
+.photo-grid {
+    position: relative;
+}
+
+.grid {
+    align-items: stretch;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.grid-item {
+    margin: 15px;
+    position: relative;
+    width: calc(50% - 30px);
+}
+
+/* Darken image with overlay. Reminder: before means take the div and insert this code before anything else within that div. */
+.grid-item .overlay {
+    background: rgba(0,0,0,0.7);
+    bottom: 0;
+    height: 99%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+        -moz-transition: all 0.4s ease-in-out 0s;
+            transition: all 0.4s ease-in-out 0s;
+  }
+
+.grid-item:hover .overlay {
+    opacity: 1;
+}
+
+.grid-caption {
+    color: #FFFFFF;
+    left: 50%;
+    opacity: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    position: absolute;
+    text-align: center;
+    top: 80%;
+    width: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  .grid-title {
+      font-size: 2rem;
+      padding-bottom: 5px;
+  }
+  
+  /* Animate caption to fade in from bottom on hover. */
+  .grid-item:hover .grid-caption {
+    left: 50%;
+    opacity: 1;
+    top: 50%;
+  }
+
+h2.subtitle {
+    display: block;
+    font-size: 2.1rem;
+    margin: 50px auto;
+    position: relative;
+    text-align: center;
+}
+
+/* underline */
+h2.subtitle::after {
+    background-color: #000000;
+    content: "";
+    display: block;
+    height: 2px;
+    margin: 30px auto 0 auto;
+    width: 100px;
+}
+
+
+/*About Me*/
+section.about-me {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../images/about-cover.jpg") no-repeat left top / cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/about-cover.jpg") no-repeat left top / cover;
+    color: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 90vh;
+    padding: 0 10px 20px 10px;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+}
+
+section.about-me a {
+    color: #66EDED;
+}
+
+section.about-me a:hover {
+    color: #FFFFFF;
+}
+
+section.about-me h2 {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+/* li edits start (remove after deleting li) */
+#about p,li {
+    margin-bottom: 0.2rem;
+}
+
+.headshot {
+    margin: 0 auto;
+    width: 10%;
+}
+
+/* underline */
+section.about-me h2::after {
+    background: #ffffff;
+}
+
+
+/*Footer*/
+footer {
+    background-color: #000000;
+    height: 150px;
+    position: relative;
+    width: 100%;
+    z-index: -2;
+}
+
+nav.contact-menu ul {
+    align-items: center;
+    bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    margin: auto;
+    padding: 7px 0;
+    position: fixed;
+    z-index: 1;
+}
+
+nav.contact-menu ul li {
+    color: #ffffff;
+    display: inline-block;
+    font-size: 1.125rem;
+    margin-bottom: 0;
+    margin-left: 15px;
+}
+
+nav.contact-menu ul li a {
+    color: #ffffff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+nav.contact-menu ul li a:hover {
+    color: #367adf;
+}
+
+/*Responsive Menu*/
+
+@media only screen and (max-width: 1160px) {
+    footer {
+        height: 100px;
+    }
+
+    nav.contact-menu ul {
+        bottom: 15px;
+        display: block;
+        text-align: center;
+    }
+
+    nav.contact-menu ul li {
+        font-size: 1rem;
+    }
+}
+    .wrapper {
+        margin: 0 auto;
+        max-width: 1100px;
+        width: 100%;
+    }
+
+@media only screen and (max-width: 750px) {
+    .menu-trigger {
+        background: url("../images/hamburger-icon.svg") no-repeat center / cover;
+        display: block;
+        height: 35px;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        width: 35px;
+        z-index: 10;
+    }
+
+    .cover-main {
+        height: 60vh;
+    }
+
+    .main-overlay {
+        background: rgba(0, 0, 0, 0.7);
+        bottom: 0;
+        display: none;
+        left: 0;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 6;
+    }
+
+    .main-overlay:after {
+        background: url("../images/close-icon.svg") no-repeat center / cover;
+        content: "";
+        display: block;
+        height: 35px;
+        position: fixed;
+        right: 20px;
+        top: 10px;
+        width: 35px;
+        z-index: 20;
+    }
+
+    .menu {
+        background: #222222;
+        bottom: 0;
+        left: 0;
+        max-width: 300px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        -webkit-transform: translate3d(-100%, 0, 0);
+                transform: translate3d(-100%, 0, 0);
+        -webkit-transition: 0.3s;
+                transition: 0.3s;
+                z-index: 30;
+    }
+
+    nav.nav-wrapper ul li {
+        display: block;
+        margin-top: 20px;
+        padding: 0;
+        padding-bottom: 20px;
+    }
+
+    nav.nav-wrapper ul li a {
+        font-size: 1.125rem;
+    }
+
+    nav.nav-wrapper ul li a:hover {
+        border-color: transparent;
+    }
+
+    body.menu-active .menu {
+        -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+        display: block;
+        padding: 0 15px;
+    }
+
+    body.menu-active .main-overlay {
+        display: block;
+    }
+
+    body.menu-active .menu-trigger {
+        display: none;
+    }
+
+    #about p, li {
+        font-size: 0.88rem;
+    }
+
+    h2.subtitle {
+        font-size: 1.4rem;
+        line-height: 0px;
+        margin: 25px auto;
+    }
+
+    /* section.about-me {
+        height: 95vh;
+    } */
+}
+
+
+@media only screen and (max-width: 560px) {
+    ul#scene li.name {
+        font-size: 2rem;
+    }
+
+    ul#scene li.title {
+        font-size: 2rem;
+        line-height: 2.2rem;
+        margin-top: 40px;
+    }
+
+    .btn {
+        margin-top: 80px;
+    }
+
+    ul#scene {
+        margin-top: 2rem;
+    }
+
+    .portfolio-btn, .contact-btn {
+        display: block;
+        font-size: 1rem;
+        margin: 20px auto;
+        max-width: 120px;
+        padding: 10px 0;
+    }
+
+    h2.subtitle {
+        font-size: 1.125rem;
+        margin: 2rem auto 1rem auto;
+    }
+
+    .about-me {
+        height: initial;
+    }
+
+    .grid-item {
+        width: initial;
+    }
+
+    .menu {
+        max-width: 200px;
+    }
+
+    div.grid {
+        width: initial !important;
+    }
+
+    .cover-main {
+        height: 50vh;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .about-me {
+        height: 70vh;
+    }
+    
+    .cover-main {
+        height: 53vh;
+    }
+
+   .menu-trigger {
+        display: block;
+        height: 35px;
+        position: absolute;
+        right: 30px;
+        top: 15px;
+        width: 35px;
+        z-index: 10;
+    }
+
+    section.about-me {
+        height: 77vh;
+    }
+}

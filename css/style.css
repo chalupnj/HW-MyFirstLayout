@@ -271,9 +271,9 @@ nav.nav-wrapper ul li a:hover {
     border-bottom: 1px solid #ffffff;
 }
 
-/*header .logo img {
+/* header .logo img {
     max-width: 100px;
-}*/
+} */
 
 header .menu-space {
     height: 50px;
@@ -316,6 +316,7 @@ ul#scene {
     text-align: center;
     width: 100%;
 }
+
 .portfolio-btn, .contact-btn {
     background: transparent;
     border: 1px solid #ffffff;

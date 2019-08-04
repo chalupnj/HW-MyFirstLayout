@@ -20,9 +20,9 @@
                         <!-- <img src="images/logo.png" class="logo"> NOTE: This image does not exist but it breaks without this placeholder-->
                 </div>
                 <ul class = "menu">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#work">My Work</a></li>
-                    <li><a href="#about">About Me</a></li>
+                    <li class="underline"><a href="#home">Home</a></li>
+                    <li class="underline"><a href="#work">My Work</a></li>
+                    <li class="underline"><a href="#about">About Me</a></li>
                 </ul>
             </div>
             </nav>
@@ -42,7 +42,7 @@
                 <li class="layer title" data-depth="0.5">CHALUPNIK</li>
                 <li class="layer btn btn-main"data-depth="0.3">
                     <!-- <a href="#work" class="portfolio-btn">My Work</a> -->
-                    <a href="https://drive.google.com/drive/folders/1MymXOFWVe1VemWRkU0We5QMkEFbmtHJy?usp=sharing" class="portfolio-btn">My Work</a>
+                    <a href="https://chalupnj.github.io/kitten-matching/" target="_blank">My Work</a>
                     <!-- Change this depending on where the file is!! -->
                     <!-- <a href="mailto:jennifer.chalupnik@gmail.com" target="_blank" class="contact-btn">Contact Me</a> -->
                     <a href="https://chalupnj.github.io/guess-the-kitten/" target="_blank" class="contact-btn">My Cats</a>
@@ -54,7 +54,7 @@
     <section class="photo-grid" id="work">
         <h2>A Few of My Recent Projects</h2>
         <div class="grid">
-            <div class="grid-item">
+            <div class="grid-item reveal">
                 <a href="./doed-redesign.html" target="_blank">
                     <div class="overlay"></div>
                     <img src="images/doed-cover.png" alt="Department of Education Website Redesign" title="Department of Education Website Redesign">
@@ -66,7 +66,7 @@
                     </div>
                 </a>
             </div>
-            <div class="grid-item">
+            <div class="grid-item reveal">
                 <a href="https://chalupnj.wixsite.com/portfolio/alpacka" target="_blank">
                     <div class="overlay"></div>
                     <img src="images/alpacka-cover.png" alt="Alpacka" title="Alpacka">
@@ -78,7 +78,7 @@
                     </div>
                 </a>
             </div>
-            <div class="grid-item">
+            <div class="grid-item reveal">
                 <a href="https://chalupnj.wixsite.com/portfolio/duo-doodle" target="_blank">
                     <div class="overlay"></div>
                     <img src="images/duodoodle-screenshot.png" alt="Duo Doodle" title="Duo Doodle">
@@ -90,7 +90,7 @@
                     </div>
                 </a>
             </div>
-            <div class="grid-item">
+            <div class="grid-item reveal">
                 <a href="https://chalupnj.wixsite.com/portfolio/chore-share" target="_blank">
                     <div class="overlay"></div>    
                     <img src="images/choreshare-cover.png" alt="Chore Share" title="Chore Share">
@@ -110,12 +110,12 @@
             <td>
                 <div class="about-wrapper">
                     <h2>About Me</h2>
-                    <div class="headshot">
+                    <div class="headshot reveal">
                         <img src="images/headshot.jpg" alt="headshot"></img>
                     </div>
                     <h3 class="tagline">B.S. Product Design | Stanford University</h3>
                     <br />
-                    <p class="tagline">I have expertise in many facets of physical and digital product design, including:</p>
+                    <p>I have expertise in many facets of physical and digital product design, including:</p>
                     <div class="list">
                         <ul>
                             <li>- design thinking</li>
@@ -151,9 +151,8 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="scripts/parallax.min.js"></script>
-    <!-- <script src="scripts/masonry.js"></script> -->
     <script src="scripts/main.js"></script>
-
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <script>
         var scene = document.getElementById("scene");
         var parallax = new Parallax(scene);

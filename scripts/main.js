@@ -8,13 +8,9 @@ $(document).ready(function() {
     $("body").toggleClass("scroll", (scrollFromTop > 350));
   });
 
-  // // Masonry
-  // $('.grid').masonry({
-  //   itemSelector: '.grid-item',
-  //   columnWidth: '.grid-sizer',
-  //   percentPosition: true,
-  //   // fitWidth: true
-  // });
+// Scroll Reveal
+  window.sr = ScrollReveal({ reset: true });
+  sr.reveal('.reveal', { duration: 900 });
 
 // Smooth Scroll
   $('.menu li a[href^="#"]').on('click', function(e){

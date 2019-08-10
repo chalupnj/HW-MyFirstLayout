@@ -9,7 +9,7 @@ ul {
 }
 
 .filled-box { 
-    background-color: #367adf;
+    background-color: #6382BF;
     color: #FFFFFF;
     padding: 2rem;
     margin-bottom: -99988px;
@@ -19,13 +19,13 @@ ul {
 /* Dropdown Button */
 .dropbtn {
     border-bottom: 1px solid transparent;
-    color: #ffffff;
+    color: #FFFFFF;
     cursor: pointer;
     font-size: 1.125rem;
     padding-bottom: 3px;
     text-decoration: none;
     transition: 0.3s;
-    background-color: #000000;
+    background-color: #6382BF;
     border: none;
 }
   
@@ -39,7 +39,7 @@ ul {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #000000;
+    background-color: #6382BF;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -226,15 +226,15 @@ header .menu-space {
 
 /* Cover image */
 .cover-main {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url('../images/wireframe-cover.jpg') right top;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/wireframe-cover.jpg') right top;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(256, 256, 256, 0.7)), to(rgba(256, 256, 256, 0.7))), url('../images/wireframe-cover.jpg') right top;
+    background: linear-gradient(rgba(256, 256, 256, 0.7), rgba(256, 256, 256, 0.7)), url('../images/wireframe-cover.jpg') right top;
     background-repeat: no-repeat;
     background-size: cover;
     height: 80vh;
 }
 
 ul#scene li.name {
-    color: #ffffff;
+    color: #212B40;
     font-size: 2.5rem;
     line-height: 2.5rem;
     text-align: center;
@@ -243,7 +243,7 @@ ul#scene li.name {
 }
 
 ul#scene li.title {
-    color: #ffffff;
+    color: #212B40;
     font-size: 2.5rem;
     line-height: 2.5rem;
     margin-top: 60px;
@@ -263,9 +263,11 @@ ul#scene {
 
 .portfolio-btn, .contact-btn {
     background: transparent;
-    border: 1px solid #ffffff;
-    color: #ffffff;
+    border: 2px solid #212B40;
+    color: #212B40;
     display: inline-block;
+    font-size: 1.125rem;
+    font-weight: 600;
     margin: 0 auto;
     padding: 10px 20px;
     text-decoration: none;
@@ -356,6 +358,7 @@ ul#scene {
   }
 
 h2 {
+    color: #6382BF;
     display: block;
     font-family: "Poppins", sans-serif;
     font-size: 2.1rem;
@@ -366,7 +369,7 @@ h2 {
 
 /* underline */
 h2::after {
-    background-color: #000000;
+    background-color: #6382BF;
     content: "";
     display: block;
     height: 2px;
@@ -377,9 +380,9 @@ h2::after {
 
 /*About Me*/
 .about-me {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../images/about-cover.jpg") no-repeat left top / cover;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/about-cover.jpg") no-repeat left top / cover;
-    color: #ffffff;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(256, 256, 256, 0.8)), to(rgba(256, 256, 256, 0.8))), url("../images/about-cover.jpg") no-repeat center bottom / cover;
+    background: linear-gradient(rgba(256, 256, 256, 0.8), rgba(256, 256, 256, 0.8)), url("../images/about-cover.jpg") no-repeat center bottom / cover;
+    color: #212B40;
     padding: 0 30px 30px;
     position: relative;
     text-align: left;
@@ -394,12 +397,17 @@ h2::after {
     z-index: 3;
 }
 
+.social-links {
+    font-weight: 500;
+}
+
 .tagline {
+    color: #000000;
     text-align: center;
 }
 
 .about-me a {
-    color: #66EDED;
+    color: #6382BF;
 }
 
 .social-links {
@@ -407,7 +415,7 @@ h2::after {
 }
 
 .about-me a:hover {
-    color: #FFFFFF;
+    color: #A6B2CA;
 }
 
 .about-me h2 {
@@ -433,13 +441,13 @@ h2::after {
 
 /* underline */
 section.about-me h2::after {
-    background: #ffffff;
+    background: #6382BF;
 }
 
 
 /*Footer*/
 footer {
-    background-color: #000000;
+    background-color: #6382BF;
     height: 150px;
     position: relative;
     width: 100%;

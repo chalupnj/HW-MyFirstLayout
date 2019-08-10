@@ -5,10 +5,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Jennifer Chalupnik</title>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:600|Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:600|Open+Sans:400,600 &display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145382635-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-145382635-1');
+    </script>
 </head>
 <body>
     <div class="main-overlay js-main-overlay"></div>
@@ -106,32 +117,25 @@
     </section>
 
     <section class="about-me" id="about">
-        <table>
-            <td>
-                <div class="about-wrapper">
-                    <h2>About Me</h2>
-                    <div class="headshot reveal">
-                        <img src="images/headshot.jpg" alt="headshot"></img>
-                    </div>
+        <div class="about-wrapper">
+            <h2>About Me</h2>
+            <div class="row reveal">
+                <div class="col-8">
                     <h3 class="tagline">B.S. Product Design | Stanford University</h3>
-                    <br />
-                    <p>I have expertise in many facets of physical and digital product design, including:</p>
-                    <div class="list">
-                        <ul>
-                            <li>- design thinking</li>
-                            <li>- user research</li>
-                            <li>- wireframing & prototyping</li>
-                            <li>- testing & iterating</li>
-                        </ul>
-                    </div>
-                    <br />
+                    <p>I have expertise in many facets of physical and digital product design, including design thinking, user research, wireframing, prototyping, testing, and iterating.</p>
                     <p>My SEO experience gives me a unique perspective when thinking about how to design for the user while also increasing organic traffic. My academic and professional background combines my skills in design thinking with my experience in user empathy and UX design. As a result, I have a strong foundation in user experience and product design across a variety of industries.</p>
+                    <br />
                     <div class="social-links">
-                        <a href="https://www.linkedin.com/in/jenniferchalupnik/" target="_blank">LinkedIn | </a><a href="https://www.behance.net/jennifechalupn" target="_blank">Behance | </a><a href="https://github.com/chalupnj" target="_blank">Github</a>
+                        <a href="https://www.linkedin.com/in/jenniferchalupnik/" target="_blank">LinkedIn</a> | <a href="" target="_blank">Resume</a> | <a href="https://github.com/chalupnj" target="_blank">Github</a>
                     </div>
                 </div>
-            </td>
-        </table>
+                <div class="col-4">
+                    <div>
+                        <img src="images/headshot.jpg" alt="headshot"></img>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer id="footer">

@@ -16,6 +16,10 @@ ul {
     padding-bottom: 99999px;
 }
 
+.img-border {
+    box-shadow: 3px 3px 10px #888888;
+}
+
 /* Dropdown Button */
 .dropbtn {
     border-bottom: 1px solid transparent;
@@ -93,6 +97,7 @@ h3 {
 h4,
 .tagline {
     font-size: 1.4rem;
+    line-height: 3rem;
 }
 
 h5 {
@@ -112,12 +117,17 @@ h6 {
 }
 
 .content-section {
-    padding: 2rem 3rem;
+    padding: 2rem 10rem;
 }
 
 .img-container {
     margin: 2rem auto;
     width: 40rem;
+}
+
+.img-container-small {
+    margin: 2rem auto;
+    width: 25rem;
 }
 
 .img-shadow {
@@ -215,6 +225,10 @@ body.scroll header.sticky {
     border-bottom: 1px solid #ffffff;
 }
 
+.active {
+    font-weight: bold;
+}
+
 /* header .logo img {
     max-width: 100px;
 } */
@@ -298,7 +312,7 @@ ul#scene {
     align-items: stretch;
     display: flex;
     flex-wrap: wrap;
-    margin: 0;
+    margin: 0 auto;
 }
 
 .grid-item {
@@ -421,6 +435,7 @@ h2::after {
 .about-me h2 {
     margin-bottom: 30px;
     margin-top: 30px;
+    padding-top: 30px;
 }
 
 /* li edits start (remove after deleting li) */
@@ -455,14 +470,14 @@ footer {
 
 nav.contact-menu ul {
     align-items: center;
-    bottom: 50px;
+    bottom: 3.5rem;
     display: flex;
     justify-content: space-between;
     left: 50%;
     -webkit-transform: translate(-50%);
             transform: translate(-50%);
     margin: auto;
-    padding: 7px 0;
+    padding: 0.5rem 0;
     position: fixed;
     z-index: 1;
 }
@@ -472,7 +487,7 @@ nav.contact-menu ul li {
     display: inline-block;
     font-size: 1.125rem;
     margin-bottom: 0;
-    margin-left: 15px;
+    margin-left: 3rem;
 }
 
 nav.contact-menu ul li a {

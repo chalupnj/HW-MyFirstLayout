@@ -1,0 +1,291 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Chore Share App | Jennifer Chalupnik Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:600|Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145382635-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-145382635-1');
+    </script>
+</head>
+<body>
+    <!-- <div class="main-overlay js-main-overlay"></div> -->
+    <header>
+        <nav class="nav-wrapper">
+            <div class="menu-space">
+                <a href="#">
+                    <!-- <img src="images/logo.png" class="logo"> NOTE: This image does not exist but it breaks without this placeholder-->
+            </div>
+            <ul class = "menu">
+                <li class="underline"><a href="index.html">Home</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">My Work</button>
+                        <div class="dropdown-content">
+                            <a href="alpacka.html">Alpacka</a>
+                            <!-- <a href="chore-share.html">Chore Share</a> -->
+                            <a href="duo-doodle.html">Duo Doodle</a> 
+                            <a href="doed-redesign.html">Dept of Ed Redesign</a>    
+                            <a href="y2s-redesign.html">Non-Profit Redesign</a>
+                            <a href="https://chalupnj.github.io/kitten-matching/" target="_blank">Kitten Game</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- <li><a href="https://chalupnj.github.io/portfolio/#work">My Work</a></! -->
+                <li class="underline"><a href="resume.html">Resume</a></li>
+            </ul>
+        </div>
+        </nav>
+        <div class="menu-trigger js-menu-trigger"></div>
+    </header>
+
+    <section class="photo-grid">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="title">
+                <h1>Chore Share</h1>
+                <br />
+                <p>An app to bring harmony and fairness to roommate living</p>
+            </div>
+            <img src="images/choreshare-jumbotron.jpg" alt="responsive website redesign"></img>
+        </div>
+
+        <div class="container-fluid reveal">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h3>The Problem</h3>
+                </div>
+                <div class="col-sm-9 pl-sm-5">
+                    <h6>Roommate living often comes with a great deal of friction. Differences in cleanliness and routines are a large part of the problem, and confrontation is often difficult. People who share living spaces have trouble coordinating chores with their roommates and ensuring that everyone does a fair share.</h6>
+                </div>
+            </div>
+            <div class="row reveal">
+                <div class="col-sm-3">
+                    <h3>Proposed Solution</h3>
+                </div>
+                <div class="col-sm-9 pl-sm-5">
+                    <h6>ChoreShare, an app that creates and assigns chores to all members of a household and motivates everyone to complete tasks.</h6>
+                </div>
+            </div>
+            <div class="row reveal">
+                <div class="hidden-xs-down col-sm-3"></div>
+                <div class="col-4 col-sm-3 pl-sm-5">
+                    <h5>Timeline</h5>
+                    <p>3 weeks (April 2019)</p>
+                </div> 
+                <div class="col-4 col-sm-3 pl-sm-5">
+                    <h5>My Role</h5>
+                    <p>UX Researcher and Designer (partner project)</p>
+                </div>
+                <div class="col-4 col-sm-3 pl-sm-5">
+                    <h5>Tools</h5>
+                    <p>Adobe XD, Invision, Trello</p>
+                </div>
+            </div>
+
+            <hr />
+
+        <div class="container-fluid content-section">
+            <h3>User Research</h3>
+            <p>My partner and I wanted to create an app that would solve an everyday problem. With that vague and ominous notion in mind, we started brainstorming. What are some everyday sources of frustration? There are many, of course, but once we narrowed down the list to those that had no existing obvious solution, we landed on the issue of roommate differences.</p>
+            <p>With that bit of direction, we started interviews and sent out a survey to gather data. Our goal when interviewing was to identify pain points between roommates, and we heard a lot of horror stories. We soon learned that cleanliness and housekeeping were the biggest stressors, so our second round of interviews delved deeper into the topics of chore completion and delegation.</p>
+            <blockquote class="blockquote">"A lot of the time I just take out the trash because no one else will and we don’t talk about it."
+                -Kevin, 27
+            </blockquote>
+        </div>
+
+        <div class="container-fluid content-section">            
+            <h4>Key Takeaways</h4>
+            <ul>
+                <li>Everyone we talked to had a bad roommate experience to talk about</li>
+                <li>The roommate relationship is delicate</li>
+                <li>Confrontation is scary</li>
+                <li>Resentment grows over messes and uncooperative roommates</li>
+                <li>People feel a lack of control when living with roommates</li>
+            </ul>
+            <p>We organized our feedback into an affinity diagram and analyzed it to find insights. We found that cleanliness, fairness, and harmony (getting along well) were the top concerns people had when living with roommates. Money also came up with regards to splitting household supplies and expenses. We thought this was an interesting secondary pain point, so we kept it in mind as a possible auxiliary feature of the app.</p>
+            <div class=img-container>
+                <img class="img-fluid" src="images/choreshare-affinity.png" alt="Affinity Diagram">
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="container-fluid content-section">
+            <h4>Understanding the User</h4>
+            <p>People living with roommates need to divide household tasks fairly because although they want to live in a clean house, they are hesitant to confront their roommates about equal division of chores.</p>
+            <p>We identified that users needed three main things: a clean place to live, a good relationship with their roommates, and a fair division of tasks.</p>
+            <div class=img-container>
+                <img class="img-fluid" src="images/choreshare-wants.png" alt="User Needs">
+            </div>
+        </div>
+
+        <div class="container-fluid content-section">
+            <h4>User Persona</h4>
+            <div class=img-container>
+                    <img class="img-fluid" src="images/choreshare-persona.png" alt="User Persona">
+                </div>
+            <h4>Storyboard</h4>
+            <p>To further understand our user, we drew up a storyboard to illustrate a typical use case.</p>
+            <div class=img-container>
+                <img class="img-fluid" src="images/choreshare-storyboard.jpg" alt="Storyboard">
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="container-fluid content-section">
+            <h4>Competitor Analysis</h4>
+            <p>We took a look at the current market and found that there were several chore splitting apps, but only one for roommates (which didn’t offer incentives). We saw our opportunity for offering an app that allows roommates to divide chores and also uses rewards to motivate them to participate.</p>
+            <div class=img-container>
+                <img class="img-fluid" src="images/choreshare-competitors.png" alt="Competitor Analysis">
+            </div>
+        </div>
+
+        <div class="container-fluid content-section">
+            <h4>User Flow</h4>
+            <p>We prioritized features for our app and mapped them out in a user flow.</p>
+            <p>In the onboarding process, the user can either create a new household or join an existing one. The app takes new users through an interactive quiz to determine their preferences and their household’s habits. It uses this data to equally assign chores to each roommate so the user doesn’t have to delegate.</p>
+            <p>From the Chores page, users can see all chores and who they are assigned to. They can also edit chores, swap chores with other roommates, and verify that chores have been completed after their roommates mark them “done.”</p>
+            <p>Users are motivated to download the app and complete their chores on time by rewards, which they can trade in through the app for discounts to popular stores. In the User Profile page, users can access these rewards. They can also view all of their own tasks and have the ability to swap chores with their roommates.</p>
+            <p>In the Household page, users can view and edit details about their household. They can also add/remove roommates or reassign chores.</p>
+            <div class=img-container>
+                <img class="img-fluid" src="images/choreshare-flow.png" alt="User Flow">
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="container-fluid content-section">
+            <h4>Sketches & Wireframes</h4>
+            <p>I sketched out the onboarding flow and some other essential screens. Using Adobe XD, we made wireframes and put together prototypes for user testing.</p>
+            <div class=img-container>
+                <img class="img-fluid" src="images/choreshare-sketches.png" alt="Sketches">
+            </div>
+            <div class=img-container>
+                <img class="img-fluid" src="images/choreshare-wireframes.png" alt="App Wireframes">
+            </div>
+        </div>
+
+        <div class="container-fluid content-section">
+            <h4>User Testing</h4>
+            <p>We tested our prototype with users, paying close attention to our onboarding flow and a few fundamental features. We discovered some points of friction and confusion, which gave us guidance for future iterations. </p>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="images/choreshare-walkthrough.mp4"></iframe>
+            </div>
+            <h4>Takeaways</h4>
+            <ul>
+                <li>Add create profile screen so user account is not the same as the household account</li>
+                <li>Make swapping process more streamlined</li>
+                <li>Add chronological hierarchy on chore screen</li>
+                <li>Don’t share progress with whole household; only have personal progress tracking</li>
+            </ul>
+        </div>
+
+        <div class="container-fluid content-section">
+            <h4>Iteration</h4>
+            <p>We implemented the improvements we learned about from user testing and created hi-fi mockups for some screens.</p>
+            <div class="row">
+                <div class="col-sm-8">
+                    <img class="img-fluid" src="images/choreshare-signin-iteration.png" alt="Adding user account">
+                </div>
+                <div class="col-sm-4">
+                        We added a user account so that the user isn’t permanently attached to their household; they can use the app with different households, without losing their personal history and rewards.
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-8">
+                    <img class="img-fluid" src="images/choreshare-swap-iteration.png" alt="Animating swap feature">
+                </div>
+                <div class="col-sm-4">
+                    We streamlined the chore swapping feature, minimizing the number of screens in the flow and adding animation opportunities.
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-8">
+                    <img class="img-fluid" src="images/choreshare-tasks-iteration.png" alt="Organizing chore screen">
+                </div>
+                <div class="col-sm-4">
+                        We iterated on the Chore screen, making the hierarchy chronological and adding color to improve usability.
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-8">
+                    <img class="img-fluid" src="images/choreshare-design-iteration.png" alt="Iterating on overall design">
+                </div>
+                <div class="col-sm-4">
+                    We iterated on the design as a whole, adding color and implementing a style guide to achieve greater cohesion across the app.
+                </div>
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="container-fluid content-section">
+            <h3>Final Thoughts</h3>
+            <div class="row set-box">
+                <div class="col-sm-4 col-sm-offset-2">
+                    <div class="filled-box">
+                        <h4>Too Many Ideas!</h4>
+                        <p>Something we struggled with at the beginning of this project was that we had too many ideas for features that we wanted to include in the app. With more time, we might be able to build out more features, but it is also important not to bog the user down. Feature prioritization matrices were helpful in narrowing down the things we wanted to focus on designing, and we knew that we would be able to do fewer things better than if we attempted to tackle too much.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-sm-offset-2">
+                    <div class="filled-box">
+                        <h4>User Flows Save Time</h4>
+                        <p>Although creating a detailed and complete user flow can take a lot of time up front, I found that it is essential to do so in order to save time later when designing. We iterated on our user flow, focusing in on each segment and then tying it together to create a cohesive user flow with no dead ends. This helped immensely when designing each screen; I could easily tell what I needed to create, how many screens it would take, and where it needed to connect to in the prototype.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-sm-offset-2">
+                    <div class="filled-box">
+                        <h4>Next Steps</h4>
+                        <p>For this project, we chose to focus on the user persona of a young millennial living with roommates, but through our research we found that there is a much larger group that would have use for this app. We’d love to extend the use case to families, especially families with young children who are teaching their kids responsibility. Children are highly motivated by rewards, so the infrastructure of our app would translate well to the family household.</p>
+                                
+                        <!-- Since we didn’t actually monetize our app, we didn’t fully flesh out the business side of things. If we were to send ChoreShare to market, we’d want to partner with popular stores or household brands in order to get discounts and coupons to use as incentives. We could monetize the app by helping market certain brands and gather user shopping trends, in return for discounts that we pass along to users. -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <nav class="contact-menu">
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/jenniferchalupnik/" target="_blank">LinkedIn</a>
+                </li>
+                <li>
+                    <a href="mailto:jennifer.chalupnik@gmail.com" target="_blank">Email</a>
+                </li>
+                <li>
+                    <a href="https://github.com/chalupnj" target="_blank">Github</a>
+                </li>
+            </ul>
+        </nav> 
+    </footer>
+
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="scripts/parallax.min.js"></script>
+<script src="scripts/main.js"></script>
+<script>
+    var scene = document.getElementById("scene");
+    var parallax = new Parallax(scene);
+</script>
+
+</body>
+
+</html>

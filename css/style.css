@@ -669,6 +669,11 @@ nav.contact-menu ul li a:hover {
 
     p {
         font-size: 0.7rem;
+        margin: 0px;
+    }
+
+    .content-section {
+        padding: 2rem 5rem;
     }
 }
 
@@ -732,6 +737,10 @@ nav.contact-menu ul li a:hover {
 
     .cover-main {
         height: 70vh;
+    }
+
+    .content-section {
+        padding: 2rem 2rem;
     }
 }
 

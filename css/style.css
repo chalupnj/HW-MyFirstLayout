@@ -472,6 +472,9 @@ section.about-me h2::after {
     background: #6382BF;
 }
 
+#credit {
+    text-align: center;
+}
 
 /*Footer*/
 footer {
@@ -510,7 +513,8 @@ nav.contact-menu ul li a {
 }
 
 nav.contact-menu ul li a:hover {
-    color: #367adf;
+    color: #bbd4ff;
+    font-weight: 700;
 }
 
 /*Responsive Menu*/

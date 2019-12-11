@@ -278,8 +278,14 @@ ul#scene li.title {
     width: 100%;
 }
 
+#name-caption {
+    font-size: 1.5rem !important;
+    margin-top: 5rem !important;
+}
+
 ul#scene {
-    margin-top: 10vh;
+    /* margin-top: 10vh; */
+    margin-top: 10rem;
 }
 
 .btn {
@@ -302,7 +308,23 @@ ul#scene {
         transition: 0.3s;
 }
 
-.portfolio-btn:hover, .contact-btn:hover {
+#resume-btn {
+    background: transparent;
+    border: 2px solid #6382BF;
+    color: #6382BF;
+    display: inline-block;
+    font-size: 1.125rem;
+    font-weight: 600;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.center-btn {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.portfolio-btn:hover, .contact-btn:hover, #resume-btn:hover {
     background: #ffffff;
     color: #000000;
 }

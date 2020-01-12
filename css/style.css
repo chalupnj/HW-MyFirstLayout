@@ -524,8 +524,7 @@ nav.contact-menu ul li {
     color: #ffffff;
     display: inline-block;
     font-size: 1.125rem;
-    margin-bottom: 0;
-    margin-left: 3rem;
+    margin: 0 1.5rem;
 }
 
 nav.contact-menu ul li a {

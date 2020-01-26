@@ -337,6 +337,10 @@ ul#scene {
     margin-left: 30px;
 }
 
+.resume {
+    margin: 3rem 10rem;
+}
+
 /*Photo Grid*/
 .photo-grid {
     position: relative;
@@ -635,6 +639,10 @@ nav.contact-menu ul li a:hover {
         border-color: transparent;
     }
 
+    .resume {
+        margin: 2rem 3rem;
+    }
+
     body.menu-active .menu {
         -webkit-transform: translate3d(0, 0, 0);
                 transform: translate3d(0, 0, 0);
@@ -772,6 +780,10 @@ nav.contact-menu ul li a:hover {
 
     .img-container-small {
         max-width: 100%;
+    }
+
+    .resume {
+        margin: 1rem;
     }
 }
 

@@ -36,10 +36,10 @@
                     <div class="dropdown">
                         <button class="dropbtn">My Work</button>
                         <div class="dropdown-content">
-                            <a href="alpacka.html">Alpacka</a>
+                            <!-- <a href="chore-share.html">Chore Share</a> -->
                             <a href="doed-redesign.html">Dept of Ed Redesign</a> 
                             <a href="y2s-redesign.html">Non-Profit Redesign</a>
-                            <!-- <a href="chore-share.html">Chore Share</a> -->
+                            <a href="alpacka.html">Alpacka</a>
                             <a href="duo-doodle.html">Duo Doodle</a>
                             <a href="https://chalupnj.github.io/kitten-matching/" target="_blank">Kitten Game</a>
                         </div>
@@ -69,7 +69,7 @@
                     <h3>The Problem</h3>
                 </div>
                 <div class="col-sm-9 pl-sm-5">
-                    <h6>Roommate living often comes with a great deal of friction. Differences in cleanliness and routines are a large part of the problem, and confrontation is often difficult. People who share living spaces have trouble coordinating chores with their roommates and ensuring that everyone does a fair share.</h6>
+                    <h6>Living with roommates can lead to friction. Differences in cleanliness and routines are a large part of the problem, and confrontation is often difficult. People who share living spaces have trouble coordinating chores with their roommates and ensuring that everyone does a fair share.</h6>
                 </div>
             </div>
             <div class="row">
@@ -92,7 +92,7 @@
                 </div>
                 <div class="col-4 col-sm-3 pl-sm-5">
                     <h5>Tools</h5>
-                    <p>Adobe XD, Invision, Trello</p>
+                    <p>Adobe XD, InVision, Trello</p>
                 </div>
             </div>
 
@@ -103,7 +103,8 @@
             <p>My partner and I wanted to create an app that would solve an everyday problem. With that vague and ominous notion in mind, we started brainstorming. What are some everyday sources of frustration? There are many, of course, but once we narrowed down the list to those that had no existing obvious solution, we landed on the issue of roommate differences.</p>
             <p>With that bit of direction, we started interviews and sent out a survey to gather data. Our goal when interviewing was to identify pain points between roommates, and we heard a lot of horror stories. We soon learned that cleanliness and housekeeping were the biggest stressors, so our second round of interviews delved deeper into the topics of chore completion and delegation.</p>
             <blockquote class="blockquote">"A lot of the time I just take out the trash because no one else will and we don’t talk about it."
-                -Kevin, 27
+            <br />
+            -Kevin, 27
             </blockquote>
         </div>
 
@@ -116,6 +117,7 @@
                 <li>Resentment grows over messes and uncooperative roommates</li>
                 <li>People feel a lack of control when living with roommates</li>
             </ul>
+            <br />
             <p>We organized our feedback into an affinity diagram and analyzed it to find insights. We found that cleanliness, fairness, and harmony (getting along well) were the top concerns people had when living with roommates. Money also came up with regards to splitting household supplies and expenses. We thought this was an interesting secondary pain point, so we kept it in mind as a possible auxiliary feature of the app.</p>
             <div class=img-container>
                 <img class="img-fluid" src="images/choreshare-affinity.png" alt="Affinity Diagram">
@@ -149,7 +151,7 @@
 
         <div class="container-fluid content-section">
             <h4>Competitor Analysis</h4>
-            <p>We took a look at the current market and found that there were several chore splitting apps, but only one for roommates (which didn’t offer incentives). We saw our opportunity for offering an app that allows roommates to divide chores and also uses rewards to motivate them to participate.</p>
+            <p>We took a look at the current market and found that there were several chore splitting apps, but only one was targeted at roommates (and it didn’t offer incentives). We saw our opportunity to offer an app that allows roommates to divide chores and also uses rewards to motivate them to participate.</p>
             <div class=img-container>
                 <img class="img-fluid" src="images/choreshare-competitors.png" alt="Competitor Analysis">
             </div>
@@ -176,29 +178,41 @@
                 <img class="img-fluid" src="images/choreshare-sketches.png" alt="Sketches">
             </div>
             <div class=img-container>
-                <img class="img-fluid" src="images/choreshare-wireframes.png" alt="App Wireframes">
+                <img class="img-fluid zoom" src="images/choreshare-wireframes.png" alt="App Wireframes">
             </div>
         </div>
 
         <div class="container-fluid content-section">
             <h4>User Testing</h4>
             <p>We tested our prototype with users, paying close attention to our onboarding flow and a few fundamental features. We discovered some points of friction and confusion, which gave us guidance for future iterations. </p>
-            <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="images/choreshare-walkthrough-mp4.mp4" width="220" height="480" frameBorder="0" allowFullScreen alt="Low Fidelity Prototype"></iframe>
+            
+            <!-- <div class="embed-responsive embed-responsive-16by9">
                 <iframe class="embed-responsive-item" src="images/choreshare-walkthrough.mp4"></iframe>
-            </div>
+            </div> -->
+            <br /><br />
             <h4>Takeaways</h4>
             <ul>
-                <li>Add create profile screen so user account is not the same as the household account</li>
+                <li>Add Create Profile screen so user account is not the same as the household account</li>
                 <li>Make swapping process more streamlined</li>
                 <li>Add chronological hierarchy on chore screen</li>
-                <li>Don’t share progress with whole household; only have personal progress tracking</li>
+                <li>Don’t share progress with whole household; only track personal progress</li>
             </ul>
         </div>
 
         <div class="container-fluid content-section">
+            <h4>Style Tile</h4>
+            <p>As the primary UI designer for this project, I created a style tile to guide the visual design of our app. This small-scale style guide defined some of the colors, components, and typography, and was helpful in building out high-fidelity mockups of a few screens.</p>
+
+            <div class=img-container>
+                <img class="img-fluid" src="images/choreshare-style-tile.png" alt="Style Tile">
+            </div>
+        </div>
+
+        <div class="container-fluid content-section">
             <h4>Iteration</h4>
-            <p>We implemented the improvements we learned about from user testing and created hi-fi mockups for some screens.</p>
-            <div class="row">
+            <p>I implemented the improvements we gleaned from user testing and created hi-fi mockups for certain screens, using the UI components we had designed.</p>
+            <div class="row full-width-row">
                 <div class="col-sm-8">
                     <img class="img-fluid" src="images/choreshare-signin-iteration.png" alt="Adding user account">
                 </div>
@@ -206,7 +220,7 @@
                         We added a user account so that the user isn’t permanently attached to their household; they can use the app with different households, without losing their personal history and rewards.
                 </div>
             </div>
-            <div class="row">
+            <div class="row full-width-row">
                 <div class="col-sm-8">
                     <img class="img-fluid" src="images/choreshare-swap-iteration.png" alt="Animating swap feature">
                 </div>
@@ -214,15 +228,15 @@
                     We streamlined the chore swapping feature, minimizing the number of screens in the flow and adding animation opportunities.
                 </div>
             </div>
-            <div class="row">
+            <div class="row full-width-row">
                 <div class="col-sm-8">
-                    <img class="img-fluid" src="images/choreshare-tasks-iteration.png" alt="Organizing chore screen">
+                    <img class="img-container" style="margin: 0 auto;" src="images/choreshare-tasks-iteration.png" alt="Organizing chore screen">
                 </div>
                 <div class="col-sm-4">
                         We iterated on the Chore screen, making the hierarchy chronological and adding color to improve usability.
                 </div>
             </div>
-            <div class="row">
+            <div class="row full-width-row">
                 <div class="col-sm-8">
                     <img class="img-fluid" src="images/choreshare-design-iteration.png" alt="Iterating on overall design">
                 </div>
@@ -230,6 +244,15 @@
                     We iterated on the design as a whole, adding color and implementing a style guide to achieve greater cohesion across the app.
                 </div>
             </div>
+        </div>
+
+        <div class="container-fluid content-section">
+            <h4>High-Fidelty Prototype</h4>
+            <p>I focused on the onboarding process flow and built out an animated prototype for the first few screens of the app.</p>
+            <iframe src="images/choreshare-onboarding-mp4.mp4" width="220" height="480" frameBorder="0" class="giphy-embed" allowFullScreen alt="High Fidelity Onboarding Prototype"></iframe>
+            <!-- <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="images/choreshare-onboarding-mp4.mp4"></iframe>
+            </div> -->
         </div>
 
         <hr />

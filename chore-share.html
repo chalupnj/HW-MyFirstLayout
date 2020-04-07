@@ -152,20 +152,29 @@
         <div class="container-fluid content-section">
             <h4>Competitor Analysis</h4>
             <p>We took a look at the current market and found that there were several chore splitting apps, but only one was targeted at roommates (and it didn’t offer incentives). We saw our opportunity to offer an app that allows roommates to divide chores and also uses rewards to motivate them to participate.</p>
-            <div class=img-container>
+            <div class=img-container-medium>
                 <img class="img-fluid" src="images/choreshare-competitors.png" alt="Competitor Analysis">
             </div>
         </div>
 
         <div class="container-fluid content-section">
-            <h4>User Flow</h4>
+            <h4>User Flows</h4>
             <p>We prioritized features for our app and mapped them out in a user flow.</p>
-            <p>In the onboarding process, the user can either create a new household or join an existing one. The app takes new users through an interactive quiz to determine their preferences and their household’s habits. It uses this data to equally assign chores to each roommate so the user doesn’t have to delegate.</p>
-            <p>From the Chores page, users can see all chores and who they are assigned to. They can also edit chores, swap chores with other roommates, and verify that chores have been completed after their roommates mark them “done.”</p>
-            <p>Users are motivated to download the app and complete their chores on time by rewards, which they can trade in through the app for discounts to popular stores. In the User Profile page, users can access these rewards. They can also view all of their own tasks and have the ability to swap chores with their roommates.</p>
-            <p>In the Household page, users can view and edit details about their household. They can also add/remove roommates or reassign chores.</p>
+            <p>In the <b>onboarding</b> process, the user can either create a new household or join an existing one. The app takes new users through an interactive <b>chore assignment</b> quiz to determine their preferences and their household’s habits. It uses this data to equally assign chores to each roommate so the user doesn’t have to delegate.</p>
+            <p>From the <b>Chores</b> screen, users can see all chores and to whom they are assigned. They can also edit chores, swap chores with other roommates, and verify that chores have been completed after their roommates mark them “done.”</p>
+            <p>On the <b>Household</b> screen, users can view and edit details about their household. They can also add/remove roommates or reassign chores.</p>
+            <p>Users are motivated to download the app and complete their chores on time with rewards, which they can trade in through the app for discounts to popular stores. On the <b>User Profile</b> screen, users can access these rewards. They can also view all of their own tasks and have the ability to swap chores with their roommates.</p>
+            <p>Click through to see each user flow below:</p>
             <div class=img-container>
-                <img class="img-fluid" src="images/choreshare-flow.png" alt="User Flow">
+                <img class="img-fluid mySlides" src="images/choreshare-onboarding-flow.png" style="width:100%" alt="Onboarding User Flow">
+                <img class="img-fluid mySlides" src="images/choreshare-assignment-flow.png" style="width:100%" alt="Chore Assignment User Flow">
+                <img class="img-fluid mySlides" src="images/choreshare-profile-screen-flow.png" style="width:100%" alt="User Profile Screen User Flow">
+                <img class="img-fluid mySlides" src="images/choreshare-chore-screen-flow.png" style="width:100%" alt="Chore Screen User Flow">
+                <img class="img-fluid mySlides" src="images/choreshare-household-screen-flow.png" style="width:100%" alt="Household Screen User Flow">
+                <img class="img-fluid mySlides" src="images/choreshare-pay-screen-flow.png" style="width:100%" alt="Pay Screen User Flow">
+
+                <button class="slideshow-btn prev-btn" onclick="prevImage(1)">&#10094;</button>
+                <button class="slideshow-btn next-btn" onclick="nextImage(1)">&#10095;</button>
             </div>
         </div>
 
@@ -217,7 +226,7 @@
                     <img class="img-fluid" src="images/choreshare-signin-iteration.png" alt="Adding user account">
                 </div>
                 <div class="col-sm-4">
-                        We added a user account so that the user isn’t permanently attached to their household; they can use the app with different households, without losing their personal history and rewards.
+                        Added a user account so that the user isn’t permanently attached to their household; they can use the app with different households, without losing their personal history and rewards.
                 </div>
             </div>
             <div class="row full-width-row">
@@ -225,7 +234,7 @@
                     <img class="img-fluid" src="images/choreshare-swap-iteration.png" alt="Animating swap feature">
                 </div>
                 <div class="col-sm-4">
-                    We streamlined the chore swapping feature, minimizing the number of screens in the flow and adding animation opportunities.
+                    Streamlined the chore swapping feature, minimizing the number of screens in the flow and adding animation opportunities.
                 </div>
             </div>
             <div class="row full-width-row">
@@ -233,7 +242,7 @@
                     <img class="img-container" style="margin: 0 auto;" src="images/choreshare-tasks-iteration.png" alt="Organizing chore screen">
                 </div>
                 <div class="col-sm-4">
-                        We iterated on the Chore screen, making the hierarchy chronological and adding color to improve usability.
+                        Iterated on the Chore screen, making the hierarchy chronological and adding color to improve usability.
                 </div>
             </div>
             <div class="row full-width-row">
@@ -241,7 +250,7 @@
                     <img class="img-fluid" src="images/choreshare-design-iteration.png" alt="Iterating on overall design">
                 </div>
                 <div class="col-sm-4">
-                    We iterated on the design as a whole, adding color and implementing a style guide to achieve greater cohesion across the app.
+                    Improved the design as a whole, adding color and implementing a style guide to achieve greater cohesion across the app.
                 </div>
             </div>
         </div>
@@ -301,11 +310,33 @@
     </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="scripts/parallax.min.js"></script>
 <script src="scripts/main.js"></script>
 <script>
-    var scene = document.getElementById("scene");
-    var parallax = new Parallax(scene);
+    // Slideshow
+    var slideIndex = 1;
+    console.log("global", slideIndex);
+    showDivs(slideIndex);
+
+    function nextImage(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function prevImage(n) {
+        showDivs(slideIndex -= n);
+    }
+
+    function showDivs(n) {
+        var index = n;
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length};
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        console.log("showdivs", slideIndex);
+        x[slideIndex-1].style.display = "block";
+    }
 </script>
 
 </body>

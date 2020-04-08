@@ -4,6 +4,10 @@
             box-sizing: border-box;
 }
 
+p {
+    line-height: 1.4rem;
+}
+
 ul {
     margin-bottom: 0;
 }
@@ -16,11 +20,16 @@ ul {
     padding-bottom: 99999px;
 }
 
+.iframe-container {
+    display: flex;
+    justify-content: center;
+}
+
 .slideshow-btn {
     border:none;
     bottom: 50%;
     transform: translateY(50%);
-    padding:8px 16px;
+    padding: 0.5rem 1rem;
     vertical-align:middle;
     overflow:hidden;
     text-decoration:none;
@@ -94,7 +103,7 @@ ul {
 /* Links inside the dropdown */
 .dropdown-content a {
     color: #FFFFFF;
-    padding: 12px 16px;
+    padding: 0.75rem 1rem;
     text-decoration: none;
     display: block;
 }
@@ -120,6 +129,10 @@ ul {
     width: 100%;
 }
 
+p, li {
+    font-size: 1rem;
+}
+
 h1,
 .long {
     color: ffffff;
@@ -136,8 +149,7 @@ h3 {
     text-transform: uppercase;
 }
 
-h4,
-.tagline {
+h4 {
     font-size: 1.4rem;
     line-height: 3rem;
 }
@@ -255,7 +267,7 @@ body.scroll header.sticky {
     display: flex;
     margin: auto;
     position: relative;
-    padding: 8px 0;
+    padding: 0.5rem 0;
     -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-around;
@@ -267,7 +279,7 @@ body.scroll header.sticky {
 .nav-wrapper ul li {
     display: inline-block;
     margin-bottom: 0;
-    padding: 0 50px;
+    padding: 0 3.125rem;
 }
 
 .underline a {
@@ -293,7 +305,7 @@ body.scroll header.sticky {
 } */
 
 header .menu-space {
-    height: 50px;
+    height: 3.125rem;
 }
 
 
@@ -319,7 +331,7 @@ ul#scene li.title {
     color: #212B40;
     font-size: 2.5rem;
     line-height: 2.5rem;
-    margin-top: 60px;
+    margin-top: 3.75rem;
     text-align: center;
     width: 100%;
 }
@@ -342,13 +354,13 @@ ul#scene {
 
 .portfolio-btn, .contact-btn {
     background: transparent;
-    border: 2px solid #212B40;
+    border: 0.125rem solid #212B40;
     color: #212B40;
     display: inline-block;
     font-size: 1.125rem;
     font-weight: 600;
     margin: 0 auto;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     text-decoration: none;
     -webkit-transition: 0.3s;
         transition: 0.3s;
@@ -356,12 +368,12 @@ ul#scene {
 
 #resume-btn {
     background: transparent;
-    border: 2px solid #6382BF;
+    border: 0.125rem solid #6382BF;
     color: #6382BF;
     display: inline-block;
     font-size: 1.125rem;
     font-weight: 600;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     text-decoration: none;
 }
 
@@ -376,11 +388,11 @@ ul#scene {
 }
 
 .portfolio-btn {
-    margin-right: 30px;
+    margin-right: 2rem;
 }
 
 .contact-btn {
-    margin-left: 30px;
+    margin-left: 2rem;
 }
 
 .resume {
@@ -402,9 +414,9 @@ ul#scene {
 }
 
 .grid-item {
-    margin: 15px;
+    margin: 1rem;
     position: relative;
-    width: calc(50% - 30px);
+    width: calc(50% - 2rem);
 }
 
 /* Darken image with overlay. Reminder: before means take the div and insert this code before anything else within that div. */
@@ -462,7 +474,7 @@ h2 {
     display: block;
     font-family: "Poppins", sans-serif;
     font-size: 2.1rem;
-    margin: 50px auto;
+    margin: 3.125rem auto;
     position: relative;
     text-align: center;
 }
@@ -483,7 +495,7 @@ h2::after {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(256, 256, 256, 0.8)), to(rgba(256, 256, 256, 0.8))), url("../images/about-cover.jpg") no-repeat center bottom / cover;
     background: linear-gradient(rgba(256, 256, 256, 0.8), rgba(256, 256, 256, 0.8)), url("../images/about-cover.jpg") no-repeat center bottom / cover;
     color: #212B40;
-    padding: 0 30px 30px;
+    padding: 0 2rem 2rem;
     position: relative;
     text-align: left;
     -webkit-box-pack: left;
@@ -497,12 +509,17 @@ h2::after {
     z-index: 3;
 }
 
+.about-wrapper {
+    margin: 2rem 8rem;
+}
+
 .social-links {
     font-weight: 500;
 }
 
 .tagline {
     color: #000000;
+    font-size: 1.4rem;
     text-align: center;
 }
 
@@ -519,9 +536,9 @@ h2::after {
 }
 
 .about-me h2 {
-    margin-bottom: 30px;
-    margin-top: 30px;
-    padding-top: 30px;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    padding-top: 2rem;
 }
 
 /* li edits start (remove after deleting li) */
@@ -529,15 +546,6 @@ h2::after {
     display: table;
     margin-left: auto;
     margin-right: auto;
-}
-
-.about-wrapper ul {
-    text-align: left;
-}
-
-.headshot {
-    margin: 0 auto 20px;
-    width: 15%;
 }
 
 /* underline */
@@ -592,6 +600,14 @@ nav.contact-menu ul li a:hover {
 /*Responsive Menu*/
 
 @media only screen and (max-width: 1200px) {
+    .about-wrapper {
+        margin: 2rem 6rem;
+    }
+
+    .tagline {
+        font-size: 1.2rem;
+    }
+
     footer {
         height: 100px;
     }
@@ -602,7 +618,7 @@ nav.contact-menu ul li a:hover {
     }
 
     nav.contact-menu ul {
-        bottom: 15px;
+        bottom: 1rem;
         display: block;
         text-align: center;
     }
@@ -617,7 +633,21 @@ nav.contact-menu ul li a:hover {
         width: 100%;
     }
 
+@media only screen and (max-width: 1000px) {
+    .about-wrapper {
+        margin: 2rem 2rem;
+    }
+
+    .tagline {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
 @media only screen and (max-width: 770px) {
+    .row {
+        margin: 2rem 0;
+    }
+
     .menu-trigger {
         background: url("../images/hamburger-icon.svg") no-repeat center / cover;
         display: block;
@@ -694,7 +724,7 @@ nav.contact-menu ul li a:hover {
         -webkit-transform: translate3d(0, 0, 0);
                 transform: translate3d(0, 0, 0);
         display: block;
-        padding: 0 15px;
+        padding: 0 1rem;
     }
 
     body.menu-active .main-overlay {
@@ -705,16 +735,7 @@ nav.contact-menu ul li a:hover {
         display: none;
     }
 
-    #about p, li {
-        font-size: 0.88rem;
-    }
-
-    .headshot {
-        width: 20%;
-    }
-
-    h4,
-    .tagline {
+    h4 {
         font-size: 1.2rem;
     }
 
@@ -728,7 +749,7 @@ nav.contact-menu ul li a:hover {
 
     h2 {
         font-size: 1.7rem;
-        line-height: 0px;
+        line-height: 0;
         margin: 2rem auto;
     }
 
@@ -749,27 +770,26 @@ nav.contact-menu ul li a:hover {
         font-size: 1rem;
     }
 
-    p {
-        font-size: 0.7rem;
-        margin: 0;
-    }
-
     .blockquote {
-        font-size: 0.85rem;
+        font-size: 1.2rem;
         margin-top: 1rem;
     }
 
     .content-section {
-        padding: 2rem 5rem;
+        padding: 2rem 3rem;
     }
 }
 
 
 @media only screen and (max-width: 640px) {
-    .headshot {
-        width: 30%;
+    .about-me {
+        padding: 0 1rem 2rem 1rem;
     }
     
+    .tagline {
+        font-size: 0.8rem;
+    }
+
     ul#scene li.name {
         font-size: 2rem;
     }
@@ -784,6 +804,10 @@ nav.contact-menu ul li a:hover {
         margin-top: 80px;
     }
 
+    #resume-btn {
+        margin-bottom: 2rem;
+    }
+
     ul#scene {
         margin-top: 2rem;
     }
@@ -796,8 +820,7 @@ nav.contact-menu ul li a:hover {
         padding: 10px 0;
     }
 
-    h4,
-    .tagline {
+    h4 {
         font-size: 1.2rem;
     }
 
@@ -805,11 +828,6 @@ nav.contact-menu ul li a:hover {
         font-size: 0.7rem;
     }
 
-    p {
-        font-size: 0.65rem;
-        line-height: 1rem;
-    }
-    
     .grid-item {
         width: initial;
     }
@@ -827,7 +845,7 @@ nav.contact-menu ul li a:hover {
     }
 
     .content-section {
-        padding: 2rem 2rem;
+        padding: 2rem 1rem;
     }
 
     .img-container-small,
@@ -841,6 +859,10 @@ nav.contact-menu ul li a:hover {
 }
 
 @media only screen and (max-width: 360px) {
+    .about-me {
+        padding: 0;
+    }
+
     .cover-main {
         height: 75vh;
     }

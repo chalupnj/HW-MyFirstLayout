@@ -178,8 +178,20 @@
 
         <div class="container-fluid content-section">
             <h4>Style Guide</h4>
-            <p>I identified the brand voice of the Department of Education and created a style guide to direct my UI design decisions.</p>
-            <div class="row">
+            <p>I identified the brand voice of the Department of Education and created a style guide to direct my UI design decisions. <b>Click through the slideshow below</b> to see the full style guide.</p>
+
+            <div class="img-container-small">
+                <img class="img-fluid mySlides img-shadow" src="images/doed-sg-direction.png" style="width:100%" alt="Style Direction">
+                <img class="img-fluid mySlides img-shadow" src="images/doed-sg-typography.png" style="width:100%" alt="Typography">
+                <img class="img-fluid mySlides img-shadow" src="images/doed-sg-imagery.png" style="width:100%" alt="Imagery">
+                <img class="img-fluid mySlides img-shadow" src="images/doed-sg-elements1.png" style="width:100%" alt="UI Elements">
+                <img class="img-fluid mySlides img-shadow" src="images/doed-sg-elements2.png" style="width:100%" alt="UI Elements">
+
+                <button class="slideshow-btn prev-btn" onclick="prevImage(1)">&#10094;</button>
+                <button class="slideshow-btn next-btn" onclick="nextImage(1)">&#10095;</button>
+            </div>
+
+            <!-- <div class="row">
                 <div class="col-sm-6">
                     <img class="img-fluid img-shadow" src="images/doed-sg-direction.png" alt="Style Direction">
                 </div>
@@ -198,7 +210,7 @@
                     <img class="img-fluid img-shadow" src="images/doed-sg-elements2.png" alt="UI Elements">
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <hr />
 
@@ -217,24 +229,20 @@
             <div class=img-container>
                 <img class="img-fluid" src="images/doed-user-testing.png" alt="User Testing">
             </div>
-            <div class="row">
+            <div class="full-width-row">
                 <div class="col-sm-6">
                     <h4>Tasks</h4>
-                    <ol>
-                        <li>1. First impressions of homepage</li>
-                        <li>2. Perform a search</li>
-                        <li>3. Find information about the Every Student Succeeds Act</li>
-                        <li>4. Find and download the 1098-E tax form</li>
-                        <li>5. Contact the Department of Education</li>
-                    </ol>
+                        <p>1. First impressions of homepage</p>
+                        <p>2. Perform a search</p>
+                        <p>3. Find information about the Every Student Succeeds Act</p>
+                        <p>4. Find and download the 1098-E tax form</p>
+                        <p>5. Contact the Department of Education</p>
                 </div>
                 <div class="col-sm-6">
                     <h4>Takeaways</h4>
-                    <ol>
-                        <li>1. Secondary menus (Loans, Grants) can be simplified to main header because everything can be found on one page</li>
-                        <li>2. Add card with phone numbers, addresses to Contact Us page</li>         
-                        <li>3. Align “More” buttons at bottom of homepage</li>
-                    </ol>
+                        <p>1. Secondary menus (Loans, Grants) can be simplified to main header because everything can be found on one page</p>
+                        <p>2. Add card with phone numbers, addresses to Contact Us page</p>         
+                        <p>3. Align “More” buttons at bottom of homepage</p>
                 </div>
             </div>
         </div>
@@ -274,7 +282,7 @@
 
         <hr />
 
-        <div class="container-fluid content-section">
+        <div class="container-fluid content-section final-thoughts">
             <h3>Final Thoughts</h3>
             <div class="row set-box">
                 <div class="col-sm-6 col-sm-offset-2">
@@ -319,8 +327,31 @@
 <script src="scripts/parallax.min.js"></script>
 <script src="scripts/main.js"></script>
 <script>
-    var scene = document.getElementById("scene");
-    var parallax = new Parallax(scene);
+    // Slideshow
+    var slideIndex = 1;
+    console.log("global", slideIndex);
+    showDivs(slideIndex);
+
+    function nextImage(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function prevImage(n) {
+        showDivs(slideIndex -= n);
+    }
+
+    function showDivs(n) {
+        var index = n;
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length};
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        console.log("showdivs", slideIndex);
+        x[slideIndex-1].style.display = "block";
+    }
 </script>
 
     

@@ -27,14 +27,15 @@ ul {
 
 .slideshow-btn {
     border:none;
+    border-radius: 50%;
     bottom: 50%;
     transform: translateY(50%);
     padding: 0.5rem 1rem;
     vertical-align:middle;
     overflow:hidden;
     text-decoration:none;
-    color:inherit;
-    background-color:inherit;
+    color: #6382BF;
+    background-color: rgba(0,0,0,0.2);
     text-align:center;
     cursor:pointer;
     white-space:nowrap;
@@ -46,11 +47,11 @@ ul {
 }
 
 .next-btn {
-    right: 0;
+    right: -3rem;
 }
 
 .prev-btn {
-    left: 0;
+    left: -3rem;
 }
 
 .mySlides {
@@ -183,8 +184,11 @@ h6 {
 }
 
 .img-container-small {
+    display: flex;
+    justify-content: center;
     margin: 2rem auto;
     width: 25rem;
+    position: relative;
 }
 
 .img-container-medium {
@@ -228,6 +232,7 @@ h6 {
 }
 
 .full-width-row {
+    display: flex;
     margin: 3rem 0;
 }
 
@@ -598,6 +603,11 @@ nav.contact-menu ul li a:hover {
 }
 
 /*Responsive Menu*/
+@media only screen and (max-width: 1500px) {
+    .final-thoughts {
+        padding: 2rem 5rem;
+    }
+}
 
 @media only screen and (max-width: 1200px) {
     .about-wrapper {
@@ -606,6 +616,10 @@ nav.contact-menu ul li a:hover {
 
     .tagline {
         font-size: 1.2rem;
+    }
+
+    .final-thoughts {
+        padding: 2rem 2rem;
     }
 
     footer {

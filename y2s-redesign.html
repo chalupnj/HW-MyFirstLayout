@@ -95,13 +95,13 @@
                     <p>Adobe XD, Invision, Trello, Miro</p>
                 </div>
             </div>
-            <div class="row">
+            <div class="row full-width-row">
                 <div class="col-sm-6 text-center">
-                    <p class="caption">Before:</p>
+                    <p class="caption" style="font-size: 1.3rem"><b>BEFORE</b></p>
                     <img class="img-fluid" src="images/y2s-old.png" alt="Current Youth2Seniors Homepage">
                 </div>
                 <div class="col-sm-6 text-center">
-                    <p class="caption">After:</p>
+                    <p class="caption" style="font-size: 1.3rem"><b>AFTER</b></p>
                     <img class="img-fluid" src="images/y2s-after.png" alt="Redesigned Youth2Seniors Homepage">
                 </div>
             </div>
@@ -186,8 +186,21 @@
 
         <div class="container-fluid content-section">
             <h3>Style Guide</h3>
-            <p>Our style guide was instrumental in applying cohesion and purpose across our designs.</p>
-            <div class="row full-width-row">
+            <<b>Our style guide was instrumental in applying cohesion and purpose across our designs. <b>Click through the slideshow below</b> to see the full style guide.</<b>
+
+            <div class="img-container-small">
+                <img class="img-fluid mySlides img-shadow" src="images/y2s-sg1.png" style="width:100%" alt="Style Guide Page 1">
+                <img class="img-fluid mySlides img-shadow" src="images/y2s-sg2.png" style="width:100%" alt="Style Guide Page 2">
+                <img class="img-fluid mySlides img-shadow" src="images/y2s-sg3.png" style="width:100%" alt="Style Guide Page 3">
+                <img class="img-fluid mySlides img-shadow" src="images/y2s-sg4.png" style="width:100%" alt="Style Guide Page 4">
+                <img class="img-fluid mySlides img-shadow" src="images/y2s-sg5.png" style="width:100%" alt="Style Guide Page 5">
+                <img class="img-fluid mySlides img-shadow" src="images/y2s-sg6.png" style="width:100%" alt="Style Guide Page 6">
+
+                <button class="slideshow-btn prev-btn" onclick="prevImage(1)">&#10094;</button>
+                <button class="slideshow-btn next-btn" onclick="nextImage(1)">&#10095;</button>
+            </div>
+
+            <!-- <div class="row full-width-row">
                 <div class="col-4 img-container">
                     <img class="img-fluid img-shadow" src="images/y2s-sg1.png" alt="Style guide page 1">
                 </div>
@@ -209,7 +222,7 @@
                     <img class="img-fluid img-shadow" src="images/y2s-sg6.png" alt="Style guide page 6">
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <hr />
 
@@ -268,7 +281,7 @@
 
         <hr />
 
-        <div class="container-fluid content-section">
+        <div class="container-fluid content-section final-thoughts">
             <h3>Final Thoughts</h3>
             <div class="row set-box">
                 <div class="col-sm-4 col-sm-offset-2">
@@ -313,8 +326,31 @@
 <script src="scripts/parallax.min.js"></script>
 <script src="scripts/main.js"></script>
 <script>
-    var scene = document.getElementById("scene");
-    var parallax = new Parallax(scene);
+    // Slideshow
+    var slideIndex = 1;
+    console.log("global", slideIndex);
+    showDivs(slideIndex);
+
+    function nextImage(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function prevImage(n) {
+        showDivs(slideIndex -= n);
+    }
+
+    function showDivs(n) {
+        var index = n;
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length};
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        console.log("showdivs", slideIndex);
+        x[slideIndex-1].style.display = "block";
+    }
 </script>
 
 </body>

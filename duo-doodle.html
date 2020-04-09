@@ -132,19 +132,25 @@
 
         <hr />
 
-        <div class="container-fluid content-section">
+        <b class="container-fluid content-section">
             <h4>Prototyping</h4>
             <p>I was the sole Product Designer for this project, so I was in charge of all the prototyping and the creation of the physical product.</p>
-            <p>I made at least 10 prototypes, ranging from low-fi cardboard to machine-milled acrylic to dovetailed wood. Through each iteration, I learned what designs were most sensible and what didn’t work at all. When designing for kids there are certain considerations I had to keep in mind: there couldn’t be any small pieces that could pose a choking hazard; the product had to be sturdy enough to take a beating from a rambunctious child; the toy had to be easy enough for someone with limited fine motor skills and tiny hands to use. Keeping these things in mind, as well as the insights we learned through interviews, I iterated until we landed on a final prototype.</p>
-            <!-- <div class="img-container">
+            <p>I made at least 10 prototypes, ranging from low-fi cardboard to machine-milled acrylic to dovetailed wood. Through each iteration, I learned what designs were most sensible and what didn’t work at all. When designing for kids there are certain considerations I had to keep in mind: there couldn’t be any small pieces that could pose a choking hazard; the product had to be sturdy enough to take a beating from a rambunctious child; the toy had to be easy enough for someone with limited fine motor skills and tiny hands to use. Keeping these things in mind, as well as the insights we learned through interviews, I iterated until we landed on a final prototype. <b>Click through the slideshow below</b> to see the progression of prototypes.</p>
+            <div class="img-container-small">
                 <img class="img-fluid mySlides" src="images/duodoodle-prototype1.png" alt="prototype iteration"  style="width:100%">
-                <img class="img-fluid mySlides" src="images/duodoodle-prototype2.png" alt="prototype iteration"  style="width:100%">
-                <img class="img-fluid mySlides" src="images/duodoodle-prototype3.png" alt="prototype iteration"  style="width:100%">
+                <img class="img-fluid mySlides" src="images/duodoodle-prototype2.jpg" alt="prototype iteration"  style="width:100%">
+                <img class="img-fluid mySlides" src="images/duodoodle-prototype3.jpg" alt="prototype iteration"  style="width:100%">
+                <img class="img-fluid mySlides" src="images/duodoodle-prototype4.jpg" alt="prototype iteration"  style="width:100%">
+                <img class="img-fluid mySlides" src="images/duodoodle-prototype5.jpg" alt="prototype iteration"  style="width:100%">
+                <img class="img-fluid mySlides" src="images/duodoodle-prototype6.jpg" alt="prototype iteration"  style="width:100%">
+                <img class="img-fluid mySlides" src="images/duodoodle-prototype7.jpg" alt="prototype iteration"  style="width:100%">
+                <img class="img-fluid mySlides" src="images/duodoodle-prototype8.jpg" alt="prototype iteration"  style="width:100%">
+                <img class="img-fluid mySlides" src="images/duodoodle-prototype9.jpg" alt="prototype iteration"  style="width:100%">
 
                 <button class="slideshow-btn prev-btn" onclick="prevImage(1)">&#10094;</button>
                 <button class="slideshow-btn next-btn" onclick="nextImage(1)">&#10095;</button>
-            </div> -->
-            <div class="container">
+            </div>
+            <!-- <div class="container">
                 <div class="row text-center text-lg-left">
                     <div class="col-md-4 col-6">
                     <a href="#" class="d-block mb-4 h-100">
@@ -192,7 +198,7 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
 
         <hr />
@@ -268,7 +274,7 @@
         </div>
 
 
-        <div class="container-fluid content-section">
+        <div class="container-fluid content-section final-thoughts">
             <h3>Final Thoughts</h3>
             <div class="row set-box">
                 <div class="col-sm-6 col-sm-offset-2">
@@ -309,8 +315,31 @@
 <script src="scripts/parallax.min.js"></script>
 <script src="scripts/main.js"></script>
 <script>
-    var scene = document.getElementById("scene");
-    var parallax = new Parallax(scene);
+    // Slideshow
+    var slideIndex = 1;
+    console.log("global", slideIndex);
+    showDivs(slideIndex);
+
+    function nextImage(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function prevImage(n) {
+        showDivs(slideIndex -= n);
+    }
+
+    function showDivs(n) {
+        var index = n;
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length};
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        console.log("showdivs", slideIndex);
+        x[slideIndex-1].style.display = "block";
+    }
 </script>
 
 </body>

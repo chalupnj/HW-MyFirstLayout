@@ -603,12 +603,6 @@ nav.contact-menu ul li a:hover {
 }
 
 /*Responsive Menu*/
-@media only screen and (max-width: 1500px) {
-    .final-thoughts {
-        padding: 2rem 5rem;
-    }
-}
-
 @media only screen and (max-width: 1200px) {
     .about-wrapper {
         margin: 2rem 6rem;
@@ -616,10 +610,6 @@ nav.contact-menu ul li a:hover {
 
     .tagline {
         font-size: 1.2rem;
-    }
-
-    .final-thoughts {
-        padding: 2rem 2rem;
     }
 
     footer {

@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=.5, maximum-scale=12.0, minimum-scale=.25, user-scalable=yes">
+
     <title>Dept of Ed Redesign | Jennifer Chalupnik Portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway:600|Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
@@ -98,7 +99,10 @@
                     <p>Adobe XD, Invision, Trello</p>
                 </div>
             </div>
-            <div class="row full-width-row">
+            <div class=img-container-medium>
+                <img class="img-fluid" src="images/doed-before-after.png" alt="Before and After">
+            </div>
+            <!-- <div class="row">
                 <div class="col-sm-6 text-center">
                     <p class="caption" style="font-size: 1.3rem"><b>BEFORE</b></p>
                     <img class="img-fluid" src="images/ed-before-full.png" alt="Current Department of Education Homepage">
@@ -108,7 +112,7 @@
                     <p class="caption" style="font-size: 1.3rem"><b>AFTER</b></p>
                     <img class="img-fluid" src="images/ed-after-full.png" alt="Redesigned Department of Education Homepage">
                 </div>
-            </div>
+            </div> -->
 
             <hr />
 
@@ -124,7 +128,7 @@
             <p>The site is resource-heavy but <b>lacks an intuitive information architecture</b> for users to find what they need. The <b>search bar provides no suggestions</b> or help for those who aren’t sure what they should search for. The alternative is to browse the homepage to find the correct information. Unfortunately, the homepage is covered with text that is mostly the same size and color. This <b>lack of hierarchy and readability</b> makes it very difficult for users to navigate the site.</p>
             <p>Aside from the poor information architecture, the Dept of Education website is ultimately dated and has a <b>“boring government” look and feel.</b> I wanted to redesign this site to make it a more <b>useful and delightful resource</b> for the educators, parents, and young minds it strives to help. Government websites often have the reputation of being old, dull, and no-frills, but that doesn’t mean they have to be depressing or unusable.</p>
             <p>With these initial findings in hand, I organized my thoughts in an affinity diagram and created user personas.</p>
-            <div class=img-container>
+            <div class=img-container-medium>
                 <img class="img-fluid" src="images/doed-affinity.png" alt="Affinity Diagram">
             </div>
         </div>
@@ -181,9 +185,12 @@
 
         <div class="container-fluid content-section">
             <h4>Style Guide</h4>
-            <p>I identified the brand voice of the Department of Education and created a style guide to direct my UI design decisions. <b>Click through the slideshow below</b> to see the full style guide.</p>
+            <p>I identified the brand voice of the Department of Education and created a style guide to direct my UI design decisions.</p>
+            <div class=img-container>
+                <img class="img-fluid" src="images/doed-sg-all.png" alt="Homepage Wireframe">
+            </div>
 
-            <div class="img-container-small">
+            <!-- <div class="img-container-small">
                 <img class="img-fluid mySlides img-shadow" src="images/doed-sg-direction.png" style="width:100%" alt="Style Direction">
                 <img class="img-fluid mySlides img-shadow" src="images/doed-sg-typography.png" style="width:100%" alt="Typography">
                 <img class="img-fluid mySlides img-shadow" src="images/doed-sg-imagery.png" style="width:100%" alt="Imagery">
@@ -192,27 +199,8 @@
 
                 <button class="slideshow-btn prev-btn" onclick="prevImage(1)">&#10094;</button>
                 <button class="slideshow-btn next-btn" onclick="nextImage(1)">&#10095;</button>
-            </div>
+            </div> -->
         </div>
-            <!-- <div class="row">
-                <div class="col-sm-6">
-                    <img class="img-fluid img-shadow" src="images/doed-sg-direction.png" alt="Style Direction">
-                </div>
-                <div class="col-sm-6">
-                    <img class="img-fluid img-shadow" src="images/doed-sg-typography.png" alt="Typography">
-                </div>
-            </div>
-            <div class="row full-width-row">
-                <div class="col-sm-4">
-                    <img class="img-fluid img-shadow" src="images/doed-sg-imagery.png" alt="Imagery">
-                </div>
-                <div class="col-sm-4">
-                    <img class="img-fluid img-shadow" src="images/doed-sg-elements1.png" alt="UI Elements">
-                </div>
-                <div class="col-sm-4">
-                    <img class="img-fluid img-shadow" src="images/doed-sg-elements2.png" alt="UI Elements">
-                </div>
-            </div>-->
 
         <hr />
 
@@ -220,7 +208,12 @@
             <h3>Prototyping</h3>
             <h4>Responsive Mockups</h4>
             <p>Using my style guide, I translated my wireframes into high-fidelity mockups. I made the designs responsive for tablet and mobile, which was something the original design lacked.</p>
-            <img class="img-fluid" src="images/doed-hero-large.png" alt="Responsive Mockups">
+            <div class="img-container">
+                <img class="img-fluid" src="images/doed-hifi-mockups-all.png" alt="Hi-Fi Mockups">
+            </div>
+            <div class="img-container">
+                <img class="img-fluid" src="images/doed-hero-large.png" alt="Responsive Mockups">
+            </div>
         </div>
 
         <hr />
@@ -228,9 +221,9 @@
         <div class="container-fluid content-section">
             <h3>User Testing</h3>
             <p>I tested my prototype with 5 users and compiled some actionable design changes from the feedback I received. The responses were generally positive, with a few suggested changes. The tasks I had them complete and the key takeaways are as follows.</p>
-            <div class=img-container>
+            <!-- <div class=img-container>
                 <img class="img-fluid" src="images/doed-user-testing.png" alt="User Testing">
-            </div>
+            </div> -->
             <div class="full-width-row">
                 <div class="col-sm-6">
                     <h4>Tasks</h4>
@@ -276,13 +269,7 @@
         <hr />
 
         <div class="container-fluid content-section">
-            <h3>Hi-Fidelity Mockups</h3>
-            <div class="img-container">
-                <img class="img-fluid" src="images/doed-hifi-mockups-desktop.png" alt="Hi-Fi Desktop Mockups">
-            </div>  
-        </div>
-
-        <div class="container-fluid content-section">
+            <h3>Hi-Fidelity Walkthroughs</h3>
             <h4>Hi-Fi Desktop Walkthrough</h4>
             <div class="embed-responsive embed-responsive-16by9">
                 <iframe class="embed-responsive-item" src="images/doed-walkthrough.mp4" allowfullscreen></iframe>

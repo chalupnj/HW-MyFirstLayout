@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  console.log('loaded')
 
   var $header = $('header');
   var $sticky = $header.before($header.clone().addClass("sticky"));
@@ -8,9 +9,7 @@ $(document).ready(function() {
     $("body").toggleClass("scroll", (scrollFromTop > 350));
   });
 
-// Scroll Reveal
-  window.sr = ScrollReveal({ reset: true });
-  sr.reveal('.reveal', { duration: 900 });
+  console.log("hi");
 
 // Smooth Scroll
   $('.menu li a[href^="#"]').on('click', function(e){
@@ -40,6 +39,7 @@ $(document).ready(function() {
 
   menuTrigger.on('click', function(){
     body.addClass('menu-active');
+    console.log("CLICK");
   });
 
   mainOverlay.on('click', function(){
@@ -49,5 +49,10 @@ $(document).ready(function() {
   $('.menu li a').on('click', function(){
     $('body').removeClass("menu-active");
   });
+
+  // Scroll Reveal
+  window.sr = ScrollReveal({ reset: true });
+  sr.reveal('.reveal', { duration: 900 });
+  
 
 });

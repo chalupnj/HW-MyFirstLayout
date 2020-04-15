@@ -119,6 +119,10 @@ ul {
     display: block;
 }
 
+.dropdown:hover ~ .resume-mobile-menu {
+    margin-top: 5rem;
+}
+
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
     border-bottom: 1px solid #ffffff;
@@ -663,6 +667,10 @@ nav.contact-menu ul li a:hover {
         z-index: 10;
     }
 
+    .dropbtn {
+        background-color: inherit;
+    }
+
     .cover-main {
         height: 70vh;
     }
@@ -682,11 +690,11 @@ nav.contact-menu ul li a:hover {
         background: url("../images/close-icon.svg") no-repeat center / cover;
         content: "";
         display: block;
-        height: 35px;
+        height: 2rem;
         position: fixed;
-        right: 20px;
-        top: 10px;
-        width: 35px;
+        right: 3rem;
+        top: 1rem;
+        width: 2rem;
         z-index: 20;
     }
 
@@ -828,10 +836,6 @@ nav.contact-menu ul li a:hover {
         font-size: 1.2rem;
     }
 
-    h6 {
-        font-size: 0.7rem;
-    }
-
     .grid-item {
         width: initial;
     }
@@ -872,15 +876,11 @@ nav.contact-menu ul li a:hover {
     }
 
     h2 {
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 
     h3 {
         font-size: 1.3rem;
-    }
-
-    h6 {
-        font-size: 0.7rem;
     }
 
    .menu-trigger {

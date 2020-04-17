@@ -187,17 +187,17 @@ h6 {
     position: relative;
 }
 
+.img-container-medium {
+    margin: 2rem auto;
+    width: 40rem;
+}
+
 .img-container-small {
     display: flex;
     justify-content: center;
     margin: 2rem auto;
     width: 25rem;
     position: relative;
-}
-
-.img-container-medium {
-    margin: 2rem auto;
-    width: 40rem;
 }
 
 .img-shadow {
@@ -468,7 +468,7 @@ ul#scene {
 
   .grid-title {
       font-size: 2rem;
-      padding-bottom: 5px;
+      padding-bottom: 0.3rem;
   }
   
   /* Animate caption to fade in from bottom on hover. */
@@ -781,6 +781,11 @@ nav.contact-menu ul li a:hover {
 
     h6 {
         font-size: 1rem;
+    }
+
+    .grid-title {
+        font-size: 1.5rem;
+        padding-bottom: 0.2rem;
     }
 
     .blockquote {

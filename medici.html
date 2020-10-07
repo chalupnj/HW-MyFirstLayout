@@ -1,0 +1,328 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=12.0, minimum-scale=0.25, user-scalable=yes">
+    <title>Medici Web App | Jennifer Chalupnik Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:600|Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145382635-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-145382635-1');
+    </script>
+</head>
+<body>
+    <div class="main-overlay js-main-overlay"></div>
+    <header>
+        <nav class="nav-wrapper">
+            <div class="menu-space">
+                <a href="#">
+                    <!-- <img src="images/logo.png" class="logo"> NOTE: This image does not exist but it breaks without this placeholder-->
+            </div>
+            <ul class = "menu">
+                <li class="underline"><a href="index.html">Home</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">My Work</button>
+                        <div class="dropdown-content">
+                            <a href="chore-share.html">Chore Share</a>
+                            <!-- <a href="medici.html">Medici</a> -->
+                            <a href="alpacka.html">Alpacka</a>
+                            <a href="y2s-redesign.html">Non-Profit Redesign</a>
+                            <a href="doed-redesign.html">Dept of Ed Redesign</a> 
+                            <a href="duo-doodle.html">Duo Doodle</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="underline"><a href="index.html#about">About Me</a></li>
+                <li class="underline"><a href="resume.html">Resume</a></li>
+            </ul>
+        </nav>
+        <div class="menu-trigger js-menu-trigger"></div>
+    </header>
+
+    <section class="photo-grid">
+        <!-- <div class="jumbotron jumbotron-fluid">
+            <div class="title">
+                <h1>Youth2Seniors Non-Profit Website Redesign</h1>
+                <br />
+                <p>Review, restructure, and redesign of a non-profit's website.</p>
+            </div>
+            <img src="images/y2s-cover.png" alt="responsive website redesign (https://www.freepik.com/free-psd/boy-using-copyspace-digital-device-living-room_3383817.htm)"></img> 
+        </div>-->
+        <div>
+            <img src="images/medici-cover-xd.png" alt="responsive website redesign"></img>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h3>The Problem</h3>
+                </div>
+                <div class="col-sm-9 pl-sm-5">
+                    <h6>Medici is a telemedicine app for patients and medical providers, with a focus on asynchronous messaging. The goal of this project was to increase patient engagement by enabling doctors to provide meaningful touchpoints and continuous care.</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <h3>Proposed Solution</h3>
+                </div>
+                <div class="col-sm-9 pl-sm-5">
+                    <h6>A feature that allows providers to schedule a message to be sent to their patient at a future time.</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="hidden-xs-down col-sm-3"></div>
+                <div class="col-4 col-sm-3 pl-sm-5">
+                    <h5>Timeline</h5>
+                    <p>2 months (Aug-Sep 2020)</p>
+                </div> 
+                <div class="col-4 col-sm-3 pl-sm-5">
+                    <h5>My Role</h5>
+                    <p>Product Designer and Researcher</p>
+                </div>
+                <div class="col-4 col-sm-3 pl-sm-5">
+                    <h5>Tools</h5>
+                    <p>Miro, Figma, JIRA</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid content-section">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="images/medici-walkthrough.mp4" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="container-fluid content-section">
+            <h3>User Research</h3>
+            <p>​We wanted to find pain points and opportunities for improvement specific to the Medici app, so we identified a group of “power users” who had the most usage of the app.</p>
+            <p>The medical community is difficult to pin down, especially during a pandemic. However, I was able to talk with 5 providers spanning human and animal medicine.</p>
+            <p>My questions focused on getting to know their workflows on Medici and offline, so that we could help fit telemedicine seamlessly into their in-person practices.</p> 
+
+            <h4>Affinity Mapping</h4>
+            <p>I organized notes from the user interviews and sorted them into 9 categories based on common themes. From there, we identified recurring needs.</p>
+            <div class="img-container">
+                <img class="img-fluid" src="images/medici-affinity.png" alt="Affinity Map">
+            </div>
+
+            <h4>Insights</h4>
+                <p>&bull; Triage teams help providers save time and help Medici fit into the office’s workflow</p>
+                <p>&bull; Providers are having trouble getting patients to use Medici and they don’t know how to attract more patients to telemedicine.</p>
+                <p>&bull; Patients usually initiate consultations, and communication ends after the patient’s issue is resolved.</p>
+                <p>&bull; Providers feel “in the dark” when trying to treat patients without seeing their records (which are housed on a different software). They are slowed down by switching between softwares while trying to treat patients via telemedicine.</p>
+                <p>&bull; Medici helps with some, but not all, of the tasks a provider does day to day; therefore, providers are still reliant on many different softwares and Medici becomes “another thing” to add to that list of tools.</p>
+
+            <!-- <h4>Notes from User Interviews</h4>
+
+            <div class="img-container">
+                <img class="img-fluid" src="images/medici-interview-notes.png" alt="Interview notes on Miro">
+            </div> -->
+        </div>
+
+        <hr />
+
+        <div class="container-fluid content-section">
+            <h3>Defining the Problem</h3>
+            <p>The company OKR was to increase patient engagement. We had learned that providers were having trouble getting their patients to use telemedicine, and through our analysis we discovered that most of the pain points were directly or indirectly impacting patients. We realized that we needed to help providers with their patient communication, so that they could attract more patients to Medici.</p>
+
+            <h4>User Journey</h4>
+            <p>To better engage patients on Medici, we needed to first understand why they might (or might not) use Medici. The average American visits the doctor 2.2 times per year. I created this timeline to better explore the reasons for this, and to see how Medici might fit into the life of an average person and help improve their well-being between doctor's visits.</p>
+            <div class="img-container">
+                <img class="img-fluid" src="images/medici-journey.png" alt="User Journey">
+            </div>
+
+
+            <h4>The Five W's and One H</h4>
+            <p>I used the Five W's framework to validate some of the needs I found, and to help arrive at a well-founded problem statement.</p>
+            <div class="img-container-medium">
+                <img class="img-fluid" src="images/medici-5ws.png" alt="Five W's and One H">
+            </div>
+
+            <h4>Problem Statement</h4>
+            <p>Balancing user needs with business goals, we defined our problem statements.</p>
+            <div class="img-container-medium">
+                <img class="img-fluid" src="images/medici-problem-statement.png" alt="Problem Statement">
+            </div>            
+        </div>
+
+        <hr />
+
+        <div class="container-fluid content-section">
+            <h3>Brainstorming Solutions</h3>
+            <p>We ideated ways make it easier for providers to find and keep in touch with their patients.</p>
+            <p>We landed on a feature that would allow providers to schedule a message to their patient to be sent at a later time.</p>
+
+            <div class="img-container">
+                <img class="img-fluid" src="images/medici-sketches.png" alt="Early Sketches">
+            </div>
+
+            
+
+            <h4>Feature Requirements</h4>
+            <p>&bull; Scheduled Message modal is prompted at end of consultation, or accessible anytime during a chat</p>
+            <p>&bull; Set date and time for message to be sent</p>
+            <p>&bull; Default message populates for providers who don’t have any time (message is customized with the patient’s name so it’s more personable)</p>
+            <p>&bull; Suggested questions and action templates let providers easily create their own message with relevant items</p>
+            <p>&bull; Providers with office staff can add colleagues to schedule messages for them</p>
+
+            <!-- <div class="img-container">
+                <img class="img-fluid" src="images/medici-features.png" alt="Feature Brainstorm">
+            </div> -->
+
+            <div class="img-container-small">
+                <figure class="mySlides">
+                    <img class="img-fluid img-shadow" src="images/medici-feature1.png" style="width:100%" alt="New icons">
+                    <figcaption>Click button to set or edit scheduled message. Icon in the inbox shows which chats have messages scheduled.</figcaption>
+                </figure>
+                <figure class="mySlides">
+                    <img class="img-fluid img-shadow" src="images/medici-feature2.png" style="width:100%" alt="Scheduled Message modal">
+                    <figcaption>User is prompted to set a scheduled message when they end each consultation.</figcaption>
+                </figure>
+                <figure class="mySlides">
+                    <img class="img-fluid img-shadow" src="images/medici-feature3.png" style="width:100%" alt="Suggested questions and actions">
+                    <figcaption>Suggested questions (top) and actions (bottom) to inspire the user and save them time.</figcaption>
+                </figure>
+
+                <button class="slideshow-btn prev-btn" onclick="prevImage(1)">&#10094;</button>
+                <button class="slideshow-btn next-btn" onclick="nextImage(1)">&#10095;</button>
+            </div>
+
+            <h4>Hypothesis: Expected Outcomes</h4>
+            <p>&bull; Providers can provide continuous care by following up with patients after consultations (check in on symptoms, lab results, prescriptions, etc)</p>
+            <p>&bull; Providers “set it and forget it,” and don’t need to remember to check in on old consultations</p>
+            <p>&bull; Patients receive a personalized message from their provider and feel cared for</p>
+            <p>&bull; Patients can re-engage with the provider if necessary, initiating another consultation</p>
+            <p>&bull; Overall, providers are communicating more, so patients are engaging more</p>
+        </div>
+
+        <!-- <div class="container-fluid content-section">
+            <h3>Sketches & Wireframes</h3>
+            <p>We sketched out a few ideas for our desktop redesign, then created wireframes with Adobe XD. We also made them responsive for mobile and tablet.</p>
+            <div class="row full-width-row">
+                <div class="col-4 img-container-small">
+                    <img class="img-fluid" src="images/y2s-sketch1.jpg" alt="Sketch">
+                </div>
+                <div class="col-4 img-container-small">
+                    <img class="img-fluid" src="images/y2s-sketch2.jpg" alt="Sketch">
+                </div>
+                <div class="col-4 img-container-small">
+                    <img class="img-fluid" src="images/y2s-sketch3.jpg" alt="Sketch">
+                </div>
+            </div> -->
+
+        <hr />
+
+        <div class="container-fluid content-section">
+            <h3>Prototyping</h3>
+            <p>We wanted to build an MVP to test if our idea was worth pursuing further, so after talking with the engineering team, I pared the idea down to some essential features.</p>
+            <div class="img-container">
+                <img class="img-fluid" src="images/medici-gif.gif" alt="Scheduled Message Feature GIF">
+            </div>
+        </div> 
+
+        <hr />
+
+        <div class="container-fluid content-section">
+            <h3>User Testing</h3>
+            <p>I tested my prototype with a doctor and received useful feedback around the content of the suggested questions templates. Before starting development, I put together a short video introducing the feature and sent it to over 100 providers, along with a survey asking for their feedback. The feedback from the survey indicated that most providers would find value from the scheduled message feature, so we released v1.</p>
+
+            <div class="img-container-medium">
+                <img class="img-fluid img-shadow" src="images/medici-survey.png" alt="Survey Results">
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="container-fluid content-section">
+            <h3>Deployment & Iteration</h3>
+            <p>I worked with the engineering team to write tickets and release v1 on the Medici web app. We included a link to a feedback survey, as well as connected Segment metrics so that we could learn more from the live feature and improve on future iterations.</p>
+            <p>We heard from several doctors that they would like to spend less time scheduling messages, and that they often send the same message to several patients. For v2, I planned to include templates to allow providers to save messages they'd written, saving them even more time.</p>
+            <p>After the initial release, I also designed a filter for the inbox that allowed users to more easily find the scheduled messages that they had set.</p>
+
+        </div>
+
+        <hr />
+
+        <div class="container-fluid content-section">
+            <h3>Final Thoughts</h3>
+            <div class="row set-box">
+                <div class="col-sm-6 col-sm-offset-2">
+                    <div class="filled-box">
+                        <h4>Agile Design & Development</h4>
+                        <p>For this project, we wanted to not only make sure our solutions were data-driven, but also test them and rapidly iterate after deployment. I met early and often with the engineering team, and pared down the designs so that we could release an MVP as soon as possible and iterate based on feedback we received on the live feature. As a result, our single web app engineer was able to build the feature in one sprint.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-sm-offset-2">
+                    <div class="filled-box">
+                        <h4>Next Steps</h4>
+                        <p>During our large-scale user research initiative, we discovered many user needs and ideated dozens of solutions. We created a possible product roadmap to address the major user needs in a fluid, chronological way. While iterating on the Scheduled Message feature, I designed an inbox filtering feature to further help providers engage with their patients. Next, we planned to automate other messaging aspects of the user workflow. Unfortunately, the company laid off 50% of the team right before the Scheduled Message feature was set to be deployed, so we weren't able to see these projects through.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <nav class="contact-menu">
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/jenniferchalupnik/" target="_blank">LinkedIn</a>
+                </li>
+                <li>
+                    <a href="mailto:jennifer.chalupnik@gmail.com" target="_blank">Email</a>
+                </li>
+                <li>
+                    <a href="https://github.com/chalupnj" target="_blank">Github</a>
+                </li>
+            </ul>
+        </nav> 
+    </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="scripts/parallax.min.js"></script>
+<script src="scripts/main.js"></script>
+<script>
+    // Slideshow
+    var slideIndex = 1;
+    console.log("global", slideIndex);
+    showDivs(slideIndex);
+
+    function nextImage(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function prevImage(n) {
+        showDivs(slideIndex -= n);
+    }
+
+    function showDivs(n) {
+        var index = n;
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length};
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        console.log("showdivs", slideIndex);
+        x[slideIndex-1].style.display = "block";
+    }
+</script>
+
+</body>
+
+</html>

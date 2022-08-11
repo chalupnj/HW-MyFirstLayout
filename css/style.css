@@ -4,7 +4,7 @@
             box-sizing: border-box;
 }
 
-p {
+p, b {
     line-height: 1.4rem;
 }
 
@@ -142,7 +142,7 @@ ul {
     width: 100%;
 }
 
-p, li {
+p, b, li {
     font-size: 1rem;
 }
 

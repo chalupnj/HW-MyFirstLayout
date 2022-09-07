@@ -1,0 +1,347 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=12.0, minimum-scale=0.25, user-scalable=yes">
+    <title>Hackathon App | Jennifer Chalupnik Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:600|Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145382635-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-145382635-1');
+    </script>
+</head>
+<body>
+    <div class="main-overlay js-main-overlay"></div>
+    <header>
+        <nav class="nav-wrapper">
+            <div class="menu-space">
+                <a href="#">
+                    <!-- <img src="images/logo.png" class="logo"> NOTE: This image does not exist but it breaks without this placeholder-->
+            </div>
+            <ul class = "menu">
+                <li class="underline"><a href="index.html">Home</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">My Work</button>
+                        <div class="dropdown-content">
+                            <a href="onboarding-protected.html">Onboarding</a>
+                            <a href="b2b-billing-protected.html">B2B Billing</a>
+                            <a href="saas-design-vision-protected.html">Complex SaaS</a>
+                            <a href="medici.html">Medici</a>
+                            <a href="doed-redesign.html">Dept of Ed Redesign</a> 
+                            <!-- <a href="chore-share.html">Chore Share</a> -->
+                            <!-- <a href="alpacka.html">Alpacka</a> -->
+                        </div>
+                    </div>
+                </li>
+                <li class="underline"><a href="index.html#about">About Me</a></li>
+                <li class="underline"><a href="resume.html">Resume</a></li>
+            </ul>
+        </nav>
+        <div class="menu-trigger js-menu-trigger"></div>
+    </header>
+
+    <section class="photo-grid">
+        <div>
+            <img src="images/inceptathon/inceptathon-cover.png" alt="Hackathon App"></img>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h3>The Problem</h3>
+                </div>
+                <div class="col-sm-9 pl-sm-5">
+                    <h6>It takes a lot of time to organize and run a company hackathon. Whomever volunteers to organize hackathons must do the planning work in addition to their normal responsibilities, which can disrupt day-to-day work. In addition, it takes effort and coordination for hackathon participants to think of project ideas and organize themselves into teams, and although someone may be interested in participating in a hackathon, they cannot do so if they cannot find a team to join or think of an idea for a solo project.</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <h3>Proposed Solution</h3>
+                </div>
+                <div class="col-sm-9 pl-sm-5">
+                    <h6>An app for planning and running hackathons, which also serves as a repository for project ideas and a tool to help employees find and join teams.</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="hidden-xs-down col-sm-3"></div>
+                <div class="col-4 col-sm-3 pl-sm-5">
+                    <h5>Timeline</h5>
+                    <p>3 days (August 2021)</p>
+                </div> 
+                <div class="col-4 col-sm-3 pl-sm-5">
+                    <h5>My Role</h5>
+                    <p>UX Researcher and Product Designer</p>
+                </div>
+                <div class="col-4 col-sm-3 pl-sm-5">
+                    <h5>Tools</h5>
+                    <p>Figma, Github</p>
+                </div>
+            </div>
+        </div>
+
+            <hr />
+
+        <div class="container-fluid content-section">
+            <h3>Background</h3>
+            <p>A hackathon is a 2-3 day event where engineers and designers can team up and build a solution to a problem of their choosing. This event happens twice per year and is organized by the senior manager of engineering who volunteered herself. When building a hackathon project, red tape is eliminated and the focus is on rapid prototyping and iteration. Projects often solve real problems that the company faces, and some even get implemented as live features after the hackathon.</p>
+            <p>This projcet started out as a hackathon project after my fellow engineers and I noticed that the process of planning a hackathon was complicated and puts a burden on the organizer. We also knew from experience that it can be difficult to come up with an idea for a project and/or to find a team to join.</p>
+        </div>
+
+        <hr/>
+        
+        <div class="container-fluid content-section">
+            <h3>Defining the Problem</h3>
+
+            <p>We wanted to build an app to solve some of these logistical challenges that come with the hackathon planning process. We only had 3 days to build this app, so we condensed the research and problem definition stages into one brainstorming session, where we relied on our own experiences as hackathon participants. We started by defining user needs and brainstorming product requirements that would address these needs.</p>
+           
+            <br />  
+            
+            <p><b>NEEDS</b></p>
+            <br />
+            <p>&bull; Hackathon organizer needs to more efficiently set up hackathons so that they can occur twice per year without requiring her to put in a lot of extra hours of work.</p>
+            <p>&bull; Employees with ideas for hackathon projects need to be able to share them with others so who may be interested in working on these projects.</p>
+            <p>&bull; Employees who want to participate in a hackathon but aren't already on a team need to see which teams have openings so that they can ask to join. </p>
+            <p>&bull; Employees who want to participate in a hackathon but need more team members need to see who is looking for a team so that they can invite these people to their team.</p>
+            <br />
+
+            <p><b>PRODUCT REQUIREMENTS</b></p>
+            <br />
+            <p>&bull; An app that can be used for every hackathon.</p>
+            <p>&bull; Users can add project ideas at any time, and they will be listed for everyone to see.</p>
+            <p>&bull; Users can add tags to ideas or projects for easier discoverability.</p>
+            <p>&bull; Ideas can become projects when Hackathon signups begin.</p>
+            <p>&bull; Users can add themselves to a project's team, or invite others to join their team.</p>
+            <p>&bull; Users who are not already in a team are listed, along with their interests, so that teams who are looking for more team members can peruse the list and invite anyone they feel is a good fit to join their team.</p>
+            <p>&bull; Hackathon resources, deadlines, and demo schedules can be accessed at any time.</p>
+            <p>&bull; Past hackathon project lists and winners are stored.</p>
+            <p>&bull; Ideas can become projects when Hackathon signups begin.</p>
+
+        </div>
+
+        <hr />
+
+        <div class="container-fluid content-section">
+            <h3>Ideation</h3>
+            <p>Because there was very limited time, I jumped right into ideation and wireframed a layout for an app that had a similar look and feel to our company's product but felt more consumer-friendly, simple, and modern.</p>
+
+            <p>First, I explored some options for layout. In one option, the content in the middle of the screen is controlled by tabs and there is content on the left side that persisted on all screens of the app.</p>
+            <div class="img-container-medium">
+                <img class="img-fluid img-shadow" src="images/inceptathon/nav-split-tabs.png" alt="Split view with tabs">
+            </div>
+
+            <p>Another option places the tabs in a menu view on the left side of the screen, and the content on the rest of the screen is dynamic based on which menu item is selected.</p>
+             <div class="img-container-medium">
+                <img class="img-fluid img-shadow" src="images/inceptathon/nav-side.png" alt="Side menu">
+            </div>
+
+            <h4>Feedback</h4>
+            <p>I ran my ideas past the engineers on my team to get their feedback. We thought it would be too complex to split the page up, so we decided to use the tabbed design but change it so that the content on the entire page changes when the user toggles between tabs. This decision ended up working out better in the long run, because it allowed us space to put more content and functionality in the app.</p>
+            <div class="img-container-medium">
+                <img class="img-fluid img-shadow" src="images/inceptathon/1-ideas-user view.png" alt="Full tabbed design">
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="container-fluid content-section">
+            <h3>Implementation</h3>
+            <p>Due to the time constraints of this hackathon project, I was designing while the engineers were building the app. If the engineers had feedback, I made tweaks on the fly and iterated until we landed on something that could be built within the time we had.</p>
+            <br />
+
+            <p>
+                <b>I designed the following user flows and functionality:</b>
+            </p>
+            <p>&bull; User profile, accessed from header.</p>
+            <p>&bull; Ideas tab lists ideas.</p>
+            <p>&bull; User can create new ideas.</p>
+            <p>&bull; Ideas can be favorited.</p>
+            <p>&bull; Ideas can be transferred into Projects, which means they will be worked on in the next hackathon.</p>
+            <p>&bull; Projects tab lists projects and team members.</p>
+            <p>&bull; Projects can have tags for easier discoverability.</p>
+            <p>&bull; Users can join project teams.</p>
+            <p>&bull; Users can invite other users to their team.</p>
+            <p>&bull; Admin View allows hackathon organizers to set up hackathons easily.</p>
+            <p>&bull; Hackathon resources panel for links like signup forms, rules, etc.</p>
+            <p>&bull; Users can view old hackathon projects and winner.s</p>
+            <p>&bull; Users can vote for their favorite project after the hackathon is over.</p>
+
+            <br />
+
+            <b>Click through to see each screen below:</b>
+            <div class="img-container" style="width:75%">
+                <img class="img-fluid mySlides" src="images/inceptathon/1-ideas-user view.png" style="width:100%" alt="Ideas tab">
+                <img class="img-fluid mySlides" src="images/inceptathon/1.1-edit profile.png" style="width:100%" alt="Edit profile">
+                <img class="img-fluid mySlides" src="images/inceptathon/2-projects-user view.png" style="width:100%" alt="Projects tab">
+                <img class="img-fluid mySlides" src="images/inceptathon/2.1-add project.png" style="width:100%" alt="Add a project">
+                <img class="img-fluid mySlides" src="images/inceptathon/3-ADMIN VIEW Add new hackathon.png" style="width:100%" alt="Admin view - add new hackathon">
+                <img class="img-fluid mySlides" src="images/inceptathon/3.1-current hackathon-before starting.png" style="width:100%" alt="Current hackathon view before start date">
+                <img class="img-fluid mySlides" src="images/inceptathon/3.2-current hackathon-demo schedule.png" style="width:100%" alt="Demo schedule">
+                <img class="img-fluid mySlides" src="images/inceptathon/2.2-voting.png" style="width:100%" alt="Voting">
+                <img class="img-fluid mySlides" src="images/inceptathon/4-past hackathons.png" style="width:100%" alt="Past hackathon projects and awards">
+
+                <button class="slideshow-btn prev-btn" onclick="prevImage(1)">&#10094;</button>
+                <button class="slideshow-btn next-btn" onclick="nextImage(1)">&#10095;</button>
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="container-fluid content-section">
+            <h3>Walkthrough</h3>
+            <p>The engineers were able to build the main structure of the app and some of the functionality, as you can see from this screen recording of the live app.</p>
+            <div class="iframe-container">
+                <iframe src="images/inceptathon/inceptathon.mp4" width="800" height="450" frameBorder="0" allowFullScreen autoplay alt="Inceptathon Wakthrough"></iframe>
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="container-fluid content-section">
+            <h3>Prototype</h3>
+            <p>For the purposes of presenting and demoing our idea, I put together a prototype to show one of the features we were most excited about but didn't have time to build: the ability to browse a list of users looking for teams and to invite them to a team.</p>
+            <div class="iframe-container">
+                <iframe src="images/inceptathon/inceptathon-invite-to-team.mp4" width="800" height="450" frameBorder="0" allowFullScreen autoplay alt="High Fidelity Inceptathon Prototype"></iframe>
+            </div>
+        </div>
+
+<!-- TODO: add captions to slideshow? invite teammate movie, fix .mov movie, make all slideshow screens the same height -->
+
+
+<!--         
+        <div class="container-fluid content-section">
+            <h3>Test & Iterate</h3>
+            <h4>User Testing</h4>
+            <p>We tested our prototype with users, paying close attention to our onboarding flow and a few fundamental features. We discovered some points of friction and confusion, which gave us guidance for future iterations. </p>
+            <p><b>See a video of the low fidelity prototype in action below.</b></p>
+            <div class="iframe-container">
+                <iframe src="images/choreshare-walkthrough-short2.mp4" width="220" height="480" frameBorder="0" allowFullScreen alt="Low Fidelity Prototype"></iframe>
+            </div>
+            <br /><br />
+            <h5>Takeaways</h5>
+            <p>&bull; Add Create Profile screen so user account is not the same as the household account</p>
+            <p>&bull; Make swapping process more streamlined</p>
+            <p>&bull; Add chronological hierarchy on chore screen</p>
+            <p>&bull; Don’t share progress with whole household; only track personal progress</p>
+        </div>
+
+        <div class="container-fluid content-section">
+            <h4>Style Tile</h4>
+            <p>As the primary UI designer for this project, I created a style tile to guide the visual design of our app. This small-scale style guide defined some of the colors, components, and typography, and was helpful in building out high-fidelity mockups of a few screens.</p>
+
+            <div class="img-container">
+                <img class="img-fluid img-border" src="images/choreshare-style-tile.png" alt="Style Tile">
+            </div>
+        </div>
+
+        <div class="container-fluid content-section">
+            <h4>Iteration</h4>
+            <p>I implemented the improvements we gleaned from user testing and created hi-fi mockups for certain screens, using the UI components we had designed.</p>        
+            <div class="img-container-medium">
+                <h5>User Account</h5>
+                <p>Added a user account so that the user isn’t permanently attached to their household; they can use the app with different households, without losing their personal history and rewards.</p>
+                <img class="img-fluid" src="images/choreshare-account-changes.png" alt="Adding user account">
+            </div>
+            <div class="img-container-medium">
+                <h5>Chore Swap Flow</h5>
+                <p>Streamlined the chore swapping feature, minimizing the number of screens in the flow and adding animation opportunities.</p>
+                <img class="img-fluid" src="images/choreshare-swap-changes.png" alt="Animating swap feature">
+            </div>
+            <div class="img-container-medium">
+                <h5>Chore Task List</h5>
+                <p>Iterated on the chore task screen, making the hierarchy chronological and adding color to improve usability.</p>
+                <img class="img-container" style="margin: 0 auto;" src="images/choreshare-list-changes.png" alt="Organizing chore screen">
+            </div>
+            <div class="img-container-medium">
+                <h5>UI Design Iteration</h5>
+                <p>Improved the design as a whole, adding color and implementing a style guide to achieve greater cohesion across the app.</p>
+                <img class="img-fluid" src="images/choreshare-ui-changes.png" alt="Iterating on overall design">
+            </div>
+        </div>
+
+        <div class="container-fluid content-section">
+            <h4>Mockups</h4>
+            <p>Using the feedback from user testing and the UI style tile, I translated our lo-fi wireframes into hi-fi mockups. </p>
+            <div class="img-container-medium">
+                <img class="img-fluid" src="images/choreshare-mockups-layout.png" alt="ChoreShare Mockups">
+            </div>
+        </div>
+
+        <div class="container-fluid content-section">
+            <h4>High-Fidelity Prototype</h4>
+            <p>I focused on the onboarding process flow and built out an animated prototype for the first few screens of the app.</p>
+            <p><b>See a video walkthrough of the high fidelity onboarding prototype below.</b></p>
+            <div class="iframe-container">
+                <iframe src="images/choreshare-onboarding-prototype.mp4" width="220" height="480" frameBorder="0" allowFullScreen autoplay alt="High Fidelity Onboarding Prototype"></iframe>
+            </div>
+        </div>
+
+        <hr /> -->
+
+        <div class="container-fluid content-section">
+            <h3>Final Thoughts</h3>
+            <p>We ended up winning awards for popular vote and for the most impactful UX. Since we weren't able to fully finish the project in this hackathon, we continued to work on it in future hackathons. It is on track to be completed by the next hackathon so that it can be used to help plan the next hackathon.</p>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <nav class="contact-menu">
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/jenniferchalupnik/" target="_blank">LinkedIn</a>
+                </li>
+                <li>
+                    <a href="mailto:jennifer.chalupnik@gmail.com" target="_blank">Email</a>
+                </li>
+                <li>
+                    <a href="https://github.com/chalupnj" target="_blank">Github</a>
+                </li>
+            </ul>
+        </nav> 
+    </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="scripts/main.js"></script>
+<script>
+    // Slideshow
+    var slideIndex = 1;
+    console.log("global", slideIndex);
+    showDivs(slideIndex);
+
+    function nextImage(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function prevImage(n) {
+        showDivs(slideIndex -= n);
+    }
+
+    function showDivs(n) {
+        var index = n;
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length};
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        console.log("showdivs", slideIndex);
+        x[slideIndex-1].style.display = "block";
+    }
+</script>
+
+</body>
+
+</html>

@@ -1,41 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=12.0, minimum-scale=0.25, user-scalable=yes"
-    />
-    <title>Jennifer Chalupnik</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Raleway:600|Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=12.0, minimum-scale=0.25, user-scalable=yes">
+    <title>SaaS Design Vision | Jennifer Chalupnik Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:600|Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-145382635-1"
-    ></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145382635-1"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-      gtag("config", "UA-145382635-1");
+    gtag('config', 'UA-145382635-1');
     </script>
-  </head>
+</head>
   <body>
     <div class="main-overlay js-main-overlay"></div>
     <header>
@@ -55,7 +40,8 @@
                 <!-- <a href="saas-design-vision-protected.html">Complex SaaS</a> -->
                 <a href="medici.html">Medici</a>
                 <a href="doed-redesign.html">Dept of Ed Redesign</a>
-                <a href="chore-share.html">Chore Share</a>
+                <a href="hackathon-app.html">Hackathon App</a>
+                <!-- <a href="chore-share.html">Chore Share</a> -->
                 <!-- <a href="alpacka.html">Alpacka</a> -->
               </div>
             </div>
@@ -139,27 +125,27 @@
         <div class="container-fluid content-section">
             <h3>Problems</h3>
             <h4>1. User Groups (RBAC model)</h4>
-            <b>CONTEXT/PROBLEM</b>
+            <p><b>CONTEXT/PROBLEM</b></p>
             <p>Permissions were assigned directly to users. This caused unnecessary complications, especially for merchants with many employees using the same account.</p>
-            <b>IDEAL STATE</b>
+            <p><b>IDEAL STATE</b></p>
             <p>Role-based access control model, where users are assigned to roles, which are then assigned permissions. This would increase security and make adding and removing user accounts more seamless.</p>
             <div class="img-container-medium">
                 <img class="img-fluid" src="images/user-permissions-rbac.png" alt="RBAC Model">
             </div>
 
             <h4>2. Account-Level Settings & Security</h4>
-            <b>CONTEXT/PROBLEM</b>
+            <p><b>CONTEXT/PROBLEM</b></p>
             <p>Only one user (Store Owner) had access to the most high-risk permissions. Often, merchants would have several employees who needed to share some of the Store Owner’s authority. This resulted in password sharing, exposing the merchant to security risks.</p>
-            <b>IDEAL STATE</b>
+            <p><b>IDEAL STATE</b></p>
             <p>Separate account-level and store-level permissions would allow more granularity and decentralization of authority. Giving users more visibility into potential security risks would help increase the security of their accounts as well.</p>
             <div class="img-container-medium">
                 <img class="img-fluid" src="images/user-permissions-account-level-security.png" alt="Account-Level Security">
             </div>
 
             <h4>3. Simplicity & Consistency</h4>
-            <b>CONTEXT/PROBLEM</b>
+            <p><b>CONTEXT/PROBLEM</b></p>
             <p>The existing experience contained 118 different permissions. They were difficult to browse and there was no way to search. The organization and linguistic structure of the permissions was inconsistent, resulting in a clunky user experience.</p>
-            <b>IDEAL STATE</b>
+            <p><b>IDEAL STATE</b></p>
             <p>Clear and consistent copywriting would help merchants understand exactly what each permission does. A simple UI would allow merchants to easily find and manage their users, groups, and permissions.</p>
             <div class="img-container-medium">
                 <img class="img-fluid" src="images/user-permissions-ui-consistency.png" alt="UI Simplicity">
@@ -172,13 +158,13 @@
             <h3>Concepts</h3>
             <p>To solve the above problems, I explored a few ideas and landed on the following concepts that made up the design vision for a new user permissions experience.</p>
             <h4>Users Overview Screen</h4>
-            <b>Improved organization/UX</b>
+            <b>Improved organization/UX</b></div>
             <ul>
               <li>&bull; Easily view users’ names, emails, and roles</li>
               <li>&bull; Filter, search, and bulk selection functionality</li>
             </ul>
 
-            <b>RBAC Model</b>
+            <p><b>RBAC Model</b></p>
             <ul>
               <li>&bull; Users can have multiple roles</li>
               <li>&bull; Easier to add/remove users</li>
@@ -192,13 +178,13 @@
             <br />
 
           <h4>Roles Overview Screen</h4>
-            <b>Guidance and customization</b>
+            <p><b>Guidance and customization</b></p>
             <ul>
               <li>&bull; Default roles meant to mimic org structure</li>
               <li>&bull; Merchants can get granular with custom roles</li>
             </ul>
 
-            <b>Protect against security risks </b>
+            <p><b>Protect against security risks </b></p>
             <ul>
               <li>&bull; Visibility into how much authority is granted by each role</li>
             </ul>
@@ -210,7 +196,7 @@
             <br />
 
             <h4>Add a User Screen</h4>
-            <b>Increase security by controlling each user’s access</b>
+            <p><b>Increase security by controlling each user’s access</b></p>
             <ul>
               <li>&bull; Temporarily disable</li>
               <li>&bull; Reset password</li>
@@ -218,7 +204,7 @@
               <li>&bull; Reduce the need to contact Support</li>
             </ul>
 
-            <b>Users map to roles, not directly to permissions (RBAC)</b>
+            <p><b>Users map to roles, not directly to permissions (RBAC)</b></p>
             <ul>
               <li>&bull; Adding and removing users is easy and does not affect other users or roles</li>
             </ul>
@@ -230,7 +216,7 @@
             <br />
 
             <h4>Indication of Authorization Status</h4>
-            <b>More autonomy → fewer Support tickets</b>
+            <p><b>More autonomy → fewer Support tickets</b></p>
             <ul>
               <li>&bull; Give users context about permissions they do not have</li>
               <li>&bull; Allow users to request permission</li>

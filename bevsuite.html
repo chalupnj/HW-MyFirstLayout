@@ -1,0 +1,247 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=12.0, minimum-scale=0.25, user-scalable=yes">
+    <title>Medici Web App | Jennifer Chalupnik Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:600|Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145382635-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-145382635-1');
+    </script>
+</head>
+<body>
+    <div class="main-overlay js-main-overlay"></div>
+    <header>
+        <nav class="nav-wrapper">
+            <div class="menu-space">
+                <a href="#">
+                    <!-- <img src="images/logo.png" class="logo"> NOTE: This image does not exist but it breaks without this placeholder-->
+            </div>
+            <ul class = "menu">
+                <li class="underline"><a href="index.html">Home</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">My Work</button>
+                        <div class="dropdown-content">
+                            <!-- <a href="bevsuite.html">Email Marketing Platform</a> -->
+                            <a href="onboarding.html">Onboarding</a>
+                            <a href="b2b-billing.html">B2B Billing</a>
+                            <a href="saas-design-vision.html">User Permissions</a>
+                            <a href="medici.html">Medici</a>
+                            <a href="doed-redesign.html">Dept of Ed Redesign</a> 
+                            <a href="hackathon-app.html">Hackathon App</a>
+                            <!-- <a href="chore-share.html">Chore Share</a> -->
+                            <!-- <a href="alpacka.html">Alpacka</a> -->
+                        </div>
+                    </div>
+                </li>
+                <li class="underline"><a href="index.html#about">About Me</a></li>
+                <li class="underline"><a href="resume.html">Resume</a></li>
+            </ul>
+        </nav>
+        <div class="menu-trigger js-menu-trigger"></div>
+    </header>
+
+    <section class="photo-grid">
+        <div>
+            <img src="images/bevsuite-cover.png" alt="email marketing platform design"></img>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h3>The Problem</h3>
+                </div>
+                <div class="col-sm-9 pl-sm-5">
+                    <h6>Smaller merchants in the beer, wine, and spirits industry want to sell and market their products online to stay competitive. However, generic email marketing software is often too complicated for them and requires a lot of manual copy/pasting of product information.</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <h3>Proposed Solution</h3>
+                </div>
+                <div class="col-sm-9 pl-sm-5">
+                    <h6>A simple, AI-powered email marketing platform focused on the wine, beer, and spirits industry, which allows merchants to send personalized emails to their customers to promote sales, advertise new product offerings, and more.</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="hidden-xs-down col-sm-3"></div>
+                <div class="col-4 col-sm-3 pl-sm-5">
+                    <h5>Timeline</h5>
+                    <p>3 months (Feb-Apr 2023)</p>
+                </div> 
+                <div class="col-4 col-sm-3 pl-sm-5">
+                    <h5>My Role</h5>
+                    <p>Product Designer and Researcher</p>
+                </div>
+                <div class="col-4 col-sm-3 pl-sm-5">
+                    <h5>Teammates</h5>
+                    <p>Head of Product, Head of Engineering, and COO</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid content-section">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/BwduGpFB-hI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        </div>
+
+        <hr />
+
+        <div class="container-fluid content-section">
+            <h3>Summary</h3>
+            <p>I worked with BevSuite to design an email marketing platform from the ground up. Our users were small beer, wine, and spirits merchants. We interviewed merchants to learn about their needs, prioritized some key requirements for an MVP, and designed v1 for testing.</p>
+            <p>v1 of the product was a desktop app because we learned that merchants do the majority of their online work on laptop or desktop computers. The Initial flow takes the merchant through sign up and creation of their first email campaign, which they can choose to send or save.</p>
+            <p>One of my favorite aspects of this product was the focus on harnessing open source information as well as AI to help merchants spin up content for their emails. Through various APIs, we provided merchants with the following automated content to make their lives easier:</p>
+            <ul style="margin-left:24px">
+                <li>&bull; AI-generated subject line ideas</li>
+                <li>&bull; Subject line ranking score to let users know how their subject line would likely perform, and notes to let them know how they might improve upon it</li>
+                <li>&bull; Automatically populated names, images, abv information, and maker notes sourced from a large product database</li>
+                <li>&bull; Connection to Mailchimp for easy customer data import</li>
+            </ul>
+            <br />
+            <p>The largest success metric for the company was the number of emails sent, so my goal when designing the user flow was to encourage the merchants to create emails.</p>
+            <p>In the video above, you can see our initial MVP, which guides the user through a simple 4-step process to create an email campaign. </p>
+        </div>
+
+        <hr />
+
+        <div class="container-fluid content-section">
+            <h3>Beyond the MVP</h3>
+            <p>This was a very fast-paced company, so we accomplished a lot in just 3 months! Here are some highlights.</p>
+            <p>Working with the product team, I created a design library with branded components to be used throughout the flows.</p>
+            
+            <p>In addition to the initial Create an Email Campaign flow, I designed the following aspects of the platform:</p>
+            <ul style="margin-left:24px">
+                <li>&bull; Campaigns: a page to house and manage all sent, drafted, and scheduled emails</li>
+                <li>&bull; Customers: a page to add and manage all customers in the merchant's contact list</li>
+                <li>&bull; Customer Lists & Segments: a method for merchants to separate their customers into lists manually or based on certain automated criteria</li>
+                <li>&bull; Account Settings: an admin area that controls settings like merchant name, password, billing, business info, and footer design</li>
+            </ul>
+
+            <div class="img-container-small" style="width: 40rem; position: relative;">
+                <figure class="mySlides">
+                    <img class="img-fluid img-shadow" src="images/bevsuite-campaigns-table.png" style="width:100%" alt="Campaigns Table">
+                    <figcaption style="margin-top: 1rem">Campaigns: a page to house and manage all sent, drafted, and scheduled emails</figcaption>
+                </figure>
+                <figure class="mySlides">
+                    <img class="img-fluid img-shadow" src="images/bevsuite-customers-table.png" style="width:100%" alt="Customers Table">
+                    <figcaption style="margin-top: 1rem">Customers: a page to add and manage all customers in the merchant's contact list</figcaption>
+                </figure>
+                <figure class="mySlides">
+                    <img class="img-fluid img-shadow" src="images/bevsuite-create-segment.png" style="width:100%" alt="Customer Segments">
+                    <figcaption style="margin-top: 1rem">Customer Segments: a method for merchants to separate their customers into lists based on certain automated criteria</figcaption>
+                </figure>
+                <figure class="mySlides">
+                    <img class="img-fluid img-shadow" src="images/bevsuite-billing.png" style="width:100%" alt="Billing">
+                    <figcaption style="margin-top: 1rem">Billing: a place to manage billing information and subscriptions</figcaption>
+                </figure>
+
+                <button class="slideshow-btn prev-btn" onclick="prevImage(1)">&#10094;</button>
+                <button class="slideshow-btn next-btn" onclick="nextImage(1)">&#10095;</button>
+            </div>
+        </div>
+
+            
+        <hr />
+
+        <div class="container-fluid content-section">
+            <h3>Multiple Product Functionality</h3>
+            <p>The initial MVP was designed only for emails that feature one product, but we heard early on from merchant feedback that an email containing information about multiple products would be much more useful. We also got feedback that the Edit Content page (where the merchant can see their email and play around with the content blocks on the page before sending it) was a bit cumbersome, especially given the low technical experience that a lot of merchants had. They wanted to be able to directly move components around on the page, much like you would do while scrapbooking or manipulating a piece of paper in the real world.
+            </p>
+            <p>Of course, this is easier said than done, as the way a layout is built on the computer has some limitations that a real-world paper project may not. For example, the layout is built upon a grid system and content must be placed within predefined grid sections. I brainstormed how we might teach this concept to the user while making the editing experience as simple and straightforward as possible.</p>
+            <p>The following is one idea I came up with to improve upon the Edit Content experience. In this flow, the merchant can drag and drop layouts onto the page and they will snap into an area. Once a layout is in place, the user can then drag a content section into it, and proceed to edit that content section.</p>
+            
+            <b>1. Drag layout space onto page</b>
+            <div class="img-container-grid">
+                <img class="img-fluid img-shadow" src="images/bevsuite-multi-1-1.png" alt="drag layout">
+                <img class="img-fluid img-shadow" src="images/bevsuite-multi-1-2.png" alt="drag layout">
+            </div>
+            <b>2. Drag content section into layout space </b>
+            <div class="img-container-grid">
+                <img class="img-fluid img-shadow" src="images/bevsuite-multi-2-1.png" alt="drag content section">
+                <img class="img-fluid img-shadow" src="images/bevsuite-multi-2-2.png" alt="drag content section">
+            </div>
+            <b>3. Find product and choose content to show</b>
+            <div class="img-container-grid">
+                <img class="img-fluid img-shadow" src="images/bevsuite-multi-3-1.png" alt="choose content">
+                <img class="img-fluid img-shadow" src="images/bevsuite-multi-3-2.png" alt="choose content">
+                <img class="img-fluid img-shadow" src="images/bevsuite-multi-3-3.png" alt="choose content">
+                <img class="img-fluid img-shadow" src="images/bevsuite-multi-3-4.png" alt="choose content">
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="container-fluid content-section">
+            <h3>Results</h3>
+            <p>We ended up implementing an even simpler design for the multi-product use case. You can see the current product at <a href="https://app.bevsuite.com">app.bevsuite.com</a>!</p>
+        </div>
+
+       
+    </section>
+
+    <footer id="footer">
+        <nav class="contact-menu">
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/jenniferchalupnik/" target="_blank">LinkedIn</a>
+                </li>
+                <li>
+                    <a href="mailto:jennifer.chalupnik@gmail.com" target="_blank">Email</a>
+                </li>
+                <li>
+                    <a href="https://github.com/chalupnj" target="_blank">Github</a>
+                </li>
+            </ul>
+        </nav> 
+    </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="scripts/parallax.min.js"></script>
+<script src="scripts/main.js"></script>
+<script>
+    // Slideshow
+    var slideIndex = 1;
+    console.log("global", slideIndex);
+    showDivs(slideIndex);
+
+    function nextImage(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function prevImage(n) {
+        showDivs(slideIndex -= n);
+    }
+
+    function showDivs(n) {
+        var index = n;
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length};
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        console.log("showdivs", slideIndex);
+        x[slideIndex-1].style.display = "block";
+    }
+</script>
+
+</body>
+
+</html>

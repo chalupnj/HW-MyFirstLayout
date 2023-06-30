@@ -215,6 +215,14 @@ h6 {
   position: relative;
 }
 
+.img-container-slideshow-medium {
+  justify-content: center;
+  margin: 2rem auto;
+  padding: 1rem;
+  position: relative;
+  width: 40rem;
+}
+
 .img-shadow {
   box-shadow: 3px 3px 7px #888888;
 }
@@ -260,6 +268,7 @@ h6 {
   display: -moz-box;
   display: -webkit-flex;
   display: flex;
+  flex-wrap: wrap;
   margin: 3rem 0;
 }
 
@@ -299,6 +308,7 @@ body.scroll header.sticky {
   display: -moz-box;
   display: -webkit-flex;
   display: flex;
+  max-width: 100%;
   margin: auto;
   position: relative;
   padding: 0.5rem 0;
@@ -313,7 +323,6 @@ body.scroll header.sticky {
 .nav-wrapper ul li {
   display: inline-block;
   margin-bottom: 0;
-  padding: 0 3.125rem;
 }
 
 .underline a {
@@ -915,6 +924,14 @@ nav.contact-menu ul li a:hover {
   .img-container-small,
   .img-container-medium {
     max-width: 100%;
+  }
+
+  .img-container-slideshow-medium {
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto;
+    max-width: 75%;
+    position: relative;
   }
 
   .resume {

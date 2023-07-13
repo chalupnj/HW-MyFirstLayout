@@ -308,6 +308,7 @@ body.scroll header.sticky {
   display: -moz-box;
   display: -webkit-flex;
   display: flex;
+  height: 66px;
   margin: auto;
   position: relative;
   padding: 20px 16px;

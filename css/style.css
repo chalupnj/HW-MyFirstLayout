@@ -13,7 +13,7 @@ ul {
 }
 
 .filled-box {
-  background-color: #6382bf;
+  background-color: #d97c75;
   color: #ffffff;
   padding: 2rem;
   margin-bottom: -99988px;
@@ -38,7 +38,7 @@ ul {
   vertical-align: middle;
   overflow: hidden;
   text-decoration: none;
-  color: #6382bf;
+  color: #d97c75;
   background-color: rgba(0, 0, 0, 0.2);
   text-align: center;
   cursor: pointer;
@@ -89,7 +89,7 @@ ul {
   padding-bottom: 3px;
   text-decoration: none;
   transition: 0.3s;
-  background-color: #6382bf;
+  background-color: #d97c75;
   border: none;
 }
 
@@ -102,7 +102,7 @@ ul {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #6382bf;
+  background-color: #d97c75;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 10;
@@ -156,7 +156,7 @@ h1,
 }
 
 h3 {
-  color: #6382bf;
+  color: #d97c75;
   font-family: "Poppins", sans-serif;
   font-size: 2rem;
   margin-bottom: 2rem;
@@ -250,7 +250,7 @@ h6 {
 }
 
 .blockquote {
-  color: #6382bf;
+  color: #d97c75;
 }
 
 .row {
@@ -302,19 +302,18 @@ body.scroll header.sticky {
 }
 
 .nav-wrapper {
-  background: #6382bf;
+  background: #d97c75;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -moz-box;
   display: -webkit-flex;
   display: flex;
-  max-width: 100%;
   margin: auto;
   position: relative;
-  padding: 0.5rem 0;
+  padding: 20px 16px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-around;
+  justify-content: flex-end;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -322,7 +321,7 @@ body.scroll header.sticky {
 
 .nav-wrapper ul li {
   display: inline-block;
-  margin-bottom: 0;
+  margin: 0 48px;
 }
 
 .underline a {
@@ -422,8 +421,8 @@ ul#scene {
 
 #resume-btn {
   background: transparent;
-  border: 0.125rem solid #6382bf;
-  color: #6382bf;
+  border: 0.125rem solid #d97c75;
+  color: #d97c75;
   display: inline-block;
   font-size: 1.125rem;
   font-weight: 600;
@@ -531,7 +530,7 @@ ul#scene {
 }
 
 h2 {
-  color: #6382bf;
+  color: #d97c75;
   display: block;
   font-family: "Poppins", sans-serif;
   font-size: 2.1rem;
@@ -542,7 +541,7 @@ h2 {
 
 /* underline */
 h2::after {
-  background-color: #6382bf;
+  background-color: #d97c75;
   content: "";
   display: block;
   height: 2px;
@@ -613,7 +612,7 @@ h2::after {
 
 /* underline */
 section.about-me h2::after {
-  background: #6382bf;
+  background: #d97c75;
 }
 
 #credit {
@@ -622,7 +621,7 @@ section.about-me h2::after {
 
 /*Footer*/
 footer {
-  background-color: #6382bf;
+  background-color: #d97c75;
   height: 150px;
   position: relative;
   width: 100%;
@@ -759,7 +758,7 @@ nav.contact-menu ul li a:hover {
   }
 
   .menu {
-    background: #6382bf;
+    background: #d97c75;
     bottom: 0;
     left: 0;
     max-width: 300px;
